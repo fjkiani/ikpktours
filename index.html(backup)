@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+	<!-- 	Required Meta tabs for bootstrap -->
+		 <meta charset="utf-8">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
+		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<title>IK Pakistan Tours</title>
+		</head>
+		<body>
+			<header>
+				<nav id="header-nav" class="navbar-default">
+				<!-- <div class="header"> -->
+					<div class="navbar-header">
+						<a href="index.html">
+							<div id="logo-img" alt="Logo image"></div>
+						</a>
+						<div class="navbar-brand">
+						<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo">
+						<ul class="main-nav js-main-nav">
+						<li><a href="#about">About</a></li>
+						<li><a href="#discover">Discover</a></li>
+						<li><a href="#book">Book</a></li>
+					</ul>
+					<a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>	
+					</div>		
+					</div>
+				</nav>
+			</header>
+			<!-- End header  -->
+
+
+		<!-- Jumbotron Section -->
+		<section class="landing-page js--landing-page container">
+			<div class="jumbo">
+				<div class="testing">
+					<figure>
+						<figure class="jumbo-photo">
+						<img src="resources/img/LahoreMosque.jpg">
+					</figure>
+				<div class ="mainHeading"><h1>Explore Authentic Pakistan</h1>
+				<h2>With Over 30 Years Of Pakistan Tour Experience, Book Your Next Journey With Us</h2><a href="#">Learn More</a>
+			</div>
+			</div>
+		</div>
+	</section>	
+		<!-- Jumbotron ends -->
+		<hr>
+
+<!-- /* Main Section 2 - Pre-About Us */ -->
+		<section class="section-meals container">
+			<ul class="meals-showcase">
+				<li class = "crop">
+					<figure>
+						<figure class="meal-photo">
+						<img src="resources/img/1.5.jpg" alt="Pakistani Food">
+					</figure>
+				</li>
+				 <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/2.5.jpg" alt="Badshahi Mosque Lahore">
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/3.jpg" alt="Mountains and a valley in Hunza valley">
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/4.jpg" alt="Pakistani decorated truck" >
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/5.jpg" alt="Nightsky in Badshahi Mosque Lahore">
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/6.jpg" alt="Lahore Mosque door">
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/7.jpg" alt="Cultural dressed lady">
+                    </figure>
+                </li>
+                <li class = "crop">
+                    <figure class="meal-photo">
+                        <img src="resources/img/8.jpg">
+                    </figure>
+                </li>
+            </ul>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		</body>	
+
+</html>
