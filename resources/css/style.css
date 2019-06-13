@@ -238,12 +238,11 @@ nav {
 	background-size: cover;
 	height: 85vh;
     background-position: center;
-    margin-top: 190px;
 /*    margin: -20em auto auto 5em;*/
 }
 
 .landing-page {
-	margin-top: -188px;
+/*	margin-top: -188px;*/
     display: block;
 }
 
@@ -883,7 +882,7 @@ input[type=submit]:active {
     .heading p {font-size: 25px; padding: 31px;}
     .flex1 {width: 100%;}
     .flexContent h2 {font-size: 32px;}
-/*    .flexParagraphs {margin: 35px 0px 0px 0px;}*/
+
 
 
 
