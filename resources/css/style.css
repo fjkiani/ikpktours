@@ -2,10 +2,6 @@
 /* BASIC SETUP */
 /* ----------------------------------------------- */
 
-/* CSS reset, to eliminate any browser-specific default stylesheet
-body { padding: 0px; margin: 0px;}
-div { padding: 0px; margin: 0px; }*/
-
 
 .module {
   width: 300px;
