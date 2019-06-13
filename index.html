@@ -12,11 +12,13 @@
     	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<script src="js/script.js"> </script>
 		<!--Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
 		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
+		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<!-- Icons -->
@@ -26,21 +28,23 @@
 		</head>
 		<body>
 			<header>
-				<nav id="header-nav" class="navbar-default">
-				<!-- <div class="header"> -->
-					<div class="navbar-header">
+				<nav>
+
+					<div class="logo">
 						<a href="index.html">
-							<div id="logo-img" alt="Logo image"></div>
-						<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
-						<div class="navbar-brand">
-						<ul class="main-nav js-main-nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#discover">Discover</a></li>
-						<li><a href="#book">Tours</a></li>
-					</ul>
-					<a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>	
-					</div>		
-					</div>
+					<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+				</div><a/>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Tours</a></li>
+					<li><a href="#">Our Story</a></li>
+				</ul>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+
 				</nav>
 			</header>
 			<!-- End header  -->
@@ -66,7 +70,7 @@
 
 <!---------- About Us Section ---------------->
 <section class="section-about js--section-about" id="about">
-	<div class="container">
+	<div class="container mobileContainer">
 		<div class="aboutHeading">  <!-- style="text-align: center;"> -->
 		<h2> As-Salamu Alaykum </h2>
 		<h3> "Peace Be Upon You"</h3> <br>
@@ -168,7 +172,6 @@
 		</div>
 	</a>
 		<div class="container">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<div class="col span-1-of-3">
 				<div class="plan-box">
 				<div class="adventure js--wp-4">
@@ -188,7 +191,7 @@
 				<div class="col span-1-of-3">	
 					<div class="plan-box">
 					<div class="special">
-						<a href="#"><h3>Special Tours</h3>
+						<a href="special.html"><h3>Special Tours</h3>
 						<!-- <a href="#" class="btn btn-full">City Packages</a> -->
 						</a></div>
 					</div>
