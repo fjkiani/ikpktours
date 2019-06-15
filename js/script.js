@@ -1,5 +1,5 @@
 
-
+// Mobile Navbar
 
 
 const navSlide = () => {
@@ -32,10 +32,28 @@ const navSlide = () => {
 
 	}
 
-
-
 navSlide();
 
 
 
- 
+function openNav() {
+  document.getElementById("navLinks").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("navLinks").style.width = "0%";
+}
+
+
+// Lazy Load 
+
+const myLazyLoad = new LazyLoad ({
+	elements_selector: ".photo1";
+});
+
+
+// var lazyLoadInstance = new LazyLoad({
+//     elements_selector: ".lazy"
+//     // ... more custom settings?
+// });
+//  
