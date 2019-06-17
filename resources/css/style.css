@@ -72,6 +72,7 @@ hr:before {
 h2 {
 	text-align: center;
 	letter-spacing: 5px;
+	text-transform: capitalize;
 }
 
 h3 {
@@ -248,18 +249,27 @@ nav {
 
 .mainHeading {
 	text-align: center;
-	color: #FAB400;
+	color: #FFF66F;
 	margin-top: 9em;
+	text-transform: capitalize;
 
 }
 
 .mainHeading h1 {
-	font-size: 60px;
+    font-size: 140px;
+    letter-spacing: 20px;
+    margin-top: 3em;
 }
 
 .mainHeading h2 {
 	color: #ffff;
 }
+
+/*.flex-container1 {
+	display: flex;
+}*/
+
+
 
 
 
@@ -416,6 +426,7 @@ footer {
     background-color: #fff666;
     padding: 50px;
     font-size: 80%;
+    width: 100%;
 }
 
 .footer-nav {
@@ -502,13 +513,27 @@ footer p {
 .heading h2 {
 	font-size: 100px;
     padding: 50px;
-/*    background-color: #fff666;*/
+    background-color: #fff666;
+    text-transform: capitalize;
+    margin-top: 100px;
 }
 
 .featuredTours h2 {
 	margin-top: 20px;
 	padding: 50px;
+	font-family: raleway;
 }
+
+.headingP {
+	text-align: center;
+    /* text-decoration: underline; */
+    text-transform: capitalize;
+    padding: 50px;
+    list-style-type: none;
+    line-height: 100px;
+    font-size: 200%;
+    letter-spacing: 10px;
+} 
 
 
 .heading p {
@@ -542,11 +567,10 @@ footer p {
 	flex-direction: column;
 }
 
-
 .flex1 {
-	flex: 0 1 60%;
+	flex: 0 1 50%;
 	width: 50%;
-	margin-top: 20em;
+    margin-top: 200px;
 
 }
 
@@ -555,6 +579,7 @@ footer p {
 	display: block;
 	padding: 0px;
 	border: 6px solid #FAB400;
+	margin-top: 2em;
 }
 
 .flexContent{
@@ -565,9 +590,28 @@ footer p {
 	margin-top: 5em;
 }
 
+.flex-container-base {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-container-base2 {
+	display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.flex2 {
+	margin-top: 50px;
+}
 
 
-/** ----------------------------------------------- */
+
+
+
+
+/** ----------------------------------------------- 
 /* City Page */ 
 /* ----------------------------------------------- */
 
@@ -596,11 +640,17 @@ footer p {
 /* Special Page */ 
 /* ----------------------------------------------- */
 
-.heading h2 {
-
-}
-
-
+.hunzaParagraph  {
+	font-size: 150%;
+	letter-spacing: 6px; }
+.flexParagraphs hr {
+	border-top: none;
+	margin-top: 5rem;}	
+.hunzaParagraph2 {
+	margin-top: 100px}	
+.hr2 {background-color: none;}
+.ansooLake{margin-top: 0;}
+/*.ansooLakePic{width: 50%;}*/
 
 
 /** ----------------------------------------------- */
@@ -653,14 +703,14 @@ footer p {
 }
 
 .carousel-inner .item > img {
-  -webkit-animation: zoom 20s;
-  animation: zoom 20s;
+  -webkit-animation: zoom 50s;
+  animation: zoom 50s;
 }
 
 
 .carousel-inner .item > img {
-  -webkit-animation: zoom 20s;
-  animation: zoom 20s;
+  -webkit-animation: zoom 50s;
+  animation: zoom 50s;
 }
 
 
@@ -670,6 +720,7 @@ footer p {
 	width:50%; 
 }	
 */
+
 
 
 
@@ -869,8 +920,7 @@ input[type=submit]:active {
     
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
-    
-}
+   
 
 
 
@@ -887,12 +937,22 @@ input[type=submit]:active {
     .mobileContainer {margin-top: -50px;}
     .logo {margin-left: -20px;}
     .pak-showcase {margin-top:0; height: 70px;}
-    .heading h2 {font-size: 40px; padding: 2px;}
+    .heading h2 {font-size: 40px; padding: 2px; margin-top: 0;}
     .heading p {font-size: 25px; padding: 31px;}
-    .flex1 {width: 100%;}
+    
+
+/*special page*/
+	.headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
+
+/*flex properties*/
+	.flexContent{width: 100%; margin-top: 0;}
+	.flex-container-base2{flex-direction: column;} 
+	.flex-container-base{flex-direction: column;}
+	.flex1 {width: 100%; margin-top: 0;}
     .flexContent h2 {font-size: 32px;}
 
-}
+
+
 
 /* XSmall phones: from 0 to 480px */
 
