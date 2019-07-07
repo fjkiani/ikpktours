@@ -1,0 +1,44 @@
+
+  <footer>
+            <div class="footer">
+                    <div class="footer-content">
+						<div class="footer-section about">
+								<div class="logo-text"><img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo" class="logo"></a></h1><br></div>
+								<div class="contact">
+										<span><i class="phone"></i>&nbsp; 347-684-2656</span>
+										<span><i class="envelope"></i>&nbsp; info@test.com</span>
+									</div>
+								<div class="social">
+									<a href="#"><i class ="fab fa-facebook"></i></a>
+									<a href="#"><i class ="fab fa-instagram"></i></a>
+								</div>	
+							</div>
+					
+				
+						<div class="footer-section links">
+						 <h2> Links </h2>
+						 <br>
+						 <ul>
+							 <a href="#"><li>Home</li></a>
+							 <a href="#"><li>Our Story</li></a>
+							 <a href="#"><li>Upcoming Tours</li></a>
+						 </ul>
+						</div>
+						<div class="footer-section contact">
+							<h2>Contact Us</h2>
+							<br>
+							<form action-"index.html" method-"post">
+								<input type= "email" name="email" class = "text-input contact-input" placeholder="Your email address"><br>
+								<textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea></textarea><br>
+								<button type="submit" class="btn btn-full js--scroll-to-plans discover" href="#discover">submit</a>
+							</form>
+						</div>
+                    </div>
+          
+            <div class="footer-bottom">
+                <p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
+					</div>
+			</div>
+	</footer>
+
+    

@@ -31,11 +31,12 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
+	overflow-x: none;
 	height: 100%;
 	width: 100%;
 	padding: 0px;
-	margin: 0px;
+    margin: 0px;
+    text-transform: capitalize;
 }
 
 
@@ -51,9 +52,6 @@ body {
 }
 
 
-
-
-
 /* ----- HEADINGS ----- */
 
 
@@ -61,7 +59,7 @@ body {
 hr:before {
     display: block;
     height: 2px;
-    background-color: #e67e22;
+    /* background-color: #e67e22; */
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -112,8 +110,8 @@ p {
 .logo {
     height: 80px;
     width: auto;
-    float: left;
-    margin-left: 20px;
+    float: right;
+   /* margin-left: -15px;*/
     }
 
 
@@ -190,7 +188,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	min-height: 20vh;
     background-color: #ffff;	
     font-family: aladin;
 }
@@ -208,10 +206,10 @@ nav {
 
 .nav-links a {
 	text-decoration: none;
-	letter-spacing: 3px;
+	letter-spacing: 5px;
 	font-weight: bold;
 	font-stretch: 14px;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .burger {
@@ -235,7 +233,7 @@ nav {
 /* ----------------------------------------------- */
 
 .jumbotron {
-	background: url('../img/LahoreMosque.jpg') no-repeat;
+	background: url('../img/2.5.jpg') no-repeat;
 	background-size: cover;
 	height: 85vh;
     background-position: center;
@@ -256,9 +254,9 @@ nav {
 }
 
 .mainHeading h1 {
-    font-size: 140px;
-    letter-spacing: 20px;
-    margin-top: 3em;
+    font-size: 80px;
+    letter-spacing: 12px;
+
 }
 
 .mainHeading h2 {
@@ -280,11 +278,24 @@ nav {
 .aboutHeading {
 	text-align: center;
 	margin-top: 65px;
+	padding: 100px;
 }
 
 .aboutIK {
 font-family: 'Raleway', sans-serif;
+letter-spacing: 2px;
 }
+
+.aboutPK {
+	margin-top: 120px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.ready {
+font-family: 'Raleway', sans-serif;
+}
+
+
 
 
 /* ----------------------------------------------- */
@@ -367,8 +378,6 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-
-
 .adventure  {
 	background: url('../img/sunsetk.jpg') no-repeat;
 	background-position: center;
@@ -380,7 +389,7 @@ font-family: 'Raleway', sans-serif;
 
 
 .city {
-	background: url('../img/cPic2.jpg') no-repeat;
+	background: url('../img/cPic8.jpg') no-repeat;
 	background-position: center;
     width: 100%;
 	height: 120%;
@@ -404,7 +413,8 @@ font-family: 'Raleway', sans-serif;
     background-size: cover;
 }
 
-.upcoming h3 {
+.picHeight {
+	height: 10em;
 
 }
 
@@ -423,11 +433,33 @@ font-family: 'Raleway', sans-serif;
 /* FOOTER */ 
 /* ----------------------------------------------- */
 footer {
-    background-color: #fff666;
+    background-color: #FFF6A9;
     padding: 50px;
     font-size: 80%;
     width: 100%;
+    position: relative;
+    height: 200px;
 }
+
+.logo-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.contactDetails {
+    text-align: center;
+}
+
+.contactDetails h4 {
+    text-transform: capitalize;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-bottom {
+   margin-top: 50px;
+} 
+
 
 .footer-nav {
     list-style: none;
@@ -436,13 +468,16 @@ footer {
 
 .social-links {
     list-style: none;
-    float: right;
+    display: flex;
+    justify-content: center;
+
 }
 
 .footer-nav li,
 .social-links li {
     display: inline-block;
     margin-right: 20px;
+    margin: 1em;
 }
 
 .footer-nav li:last-child,
@@ -513,16 +548,16 @@ footer p {
 .heading h2 {
 	font-size: 100px;
     padding: 50px;
-    background-color: #fff666;
+    background-color: #FFF6A9;
     text-transform: capitalize;
     margin-top: 100px;
+    font-family: 'Aladin', cursive;
 }
 
 .featuredTours h2 {
 	margin-top: 20px;
 	padding: 50px;
-	font-family: raleway;
-}
+    font-family: 'Raleway', sans-serif;}
 
 .headingP {
 	text-align: center;
@@ -530,9 +565,10 @@ footer p {
     text-transform: capitalize;
     padding: 50px;
     list-style-type: none;
-    line-height: 100px;
+    line-height: 80px;
     font-size: 200%;
     letter-spacing: 10px;
+    font-family: 'Aladin', cursive;
 } 
 
 
@@ -545,18 +581,38 @@ footer p {
 /*    font-family: raleway;
 */}
 
-.discoverPakistan h2 {
-	text-align: center;
+.discoverPakistan h1 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
 }
 
-.flexParagraphs {
-	margin: 35px 0px 0px 0px;
-	font-family: raleway;
-	align-content: center;
-	letter-spacing: 3px;
-	text-transform: capitalize;
-	font-weight: 500;
+.discoverPakistan {
+    padding: 0em 2em;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.discoverParagraph {
+    margin-top: 30px;
+}
 
+
+
+.flexParagraphs {
+    
+    margin: 21px 0px 0px 0px;
+    font-family: raleway;
+    align-content: center;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 30px;
+    
+}
+
+.secondParagraph {
+    text-transform: capitalize;
 }
 
 .flex-container {
@@ -564,13 +620,14 @@ footer p {
 	align-items: center; /*cross axis*/
 /*	justify-content: center;  main axis  */
 	flex-wrap: wrap;
-	flex-direction: column;
+    flex-direction: column;
+    margin-top: -4em;
 }
 
 .flex1 {
 	flex: 0 1 50%;
 	width: 50%;
-    margin-top: 200px;
+    margin-top: 100px;
 
 }
 
@@ -578,8 +635,8 @@ footer p {
 	width: 100%;
 	display: block;
 	padding: 0px;
-	border: 6px solid #FAB400;
-	margin-top: 2em;
+	/* border: 6px solid #FAB400; */
+	margin-top: 0px;
 }
 
 .flexContent{
@@ -587,7 +644,8 @@ footer p {
 	padding: 50px;
 	text-align: center;
 	width: 50%;
-	margin-top: 5em;
+    /* margin-top: 5em; */
+    
 }
 
 .flex-container-base {
@@ -603,10 +661,16 @@ footer p {
 }
 
 .flex2 {
-	margin-top: 50px;
+	margin-top: 1px;
 }
 
 
+
+/*//Main page flex */
+.flex-container-1 {
+	align-items: center;
+	display: flex;
+}
 
 
 
@@ -634,6 +698,19 @@ footer p {
     margin-top: -1em;
 }
 
+.roof h2 {
+    font-size: 65px;
+    /* margin-top: -70px; */
+} 
+
+.headingParagraph {
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+
+
+
 
 
 /** ----------------------------------------------- */
@@ -652,6 +729,30 @@ footer p {
 .ansooLake{margin-top: 0;}
 /*.ansooLakePic{width: 50%;}*/
 
+
+
+/** ----------------------------------------------- */
+/* Upcoming Page */ 
+
+
+.upcomingContent {
+    width: 80%;
+    padding: 0;
+    margin-top: 0;
+}
+
+.date {
+    display: flex;
+    justify-content: space-around
+}
+
+.ul {
+    list-style: none;
+}
+
+.li {
+    list-style: none;
+}
 
 /** ----------------------------------------------- */
 /* ICONS */ 
@@ -684,7 +785,7 @@ footer p {
 /* ----------------------------------------------- */
 
 
-@-webkit-keyframes zoom {
+/* @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(1, 1);
   }
@@ -700,18 +801,24 @@ footer p {
   to {
     transform: scale(1.5, 1.5);
   }
-}
+}  */
 
 .carousel-inner .item > img {
   -webkit-animation: zoom 50s;
   animation: zoom 50s;
+  position: relative;
+  /* display: none; */
+  -webkit-transition: 0.9s ease-in-out left;
+  -moz-transition: 0.9s ease-in-out left;
+  -o-transition: 0.9s ease-in-out left;
+  transition: 0.9s ease-in-out left;
 }
-
+/* 
 
 .carousel-inner .item > img {
   -webkit-animation: zoom 50s;
   animation: zoom 50s;
-}
+} */
 
 
 
@@ -721,6 +828,54 @@ footer p {
 }	
 */
 
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
 
 
@@ -745,11 +900,13 @@ input[type=submit] {
 .btn-full:link,
 .btn-full:visited,
 input[type=submit] {
-    background-color: #fff666;;
-    border: 3px solid #e67e22;
+    background-color: #fff666;
+    border: 1px solid #e67e22;
     color: #000000;
-    margin-right: 15px;
-    margin-top: 40px;
+    margin-right: 10px;
+    /* margin-top: 40px; */
+    letter-spacing: 2px;
+    text-transform: capitalize
 }
 
 
@@ -801,7 +958,7 @@ input[type=submit]:active {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 75vh;
         top: 9vh;
         display: flex;
         background-color: #ffff;
@@ -859,13 +1016,15 @@ input[type=submit]:active {
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
     body { font-size: 16px; }
-    section { padding: 30px 0; }
+    section { padding: 30px 0;
+     }
     
     .row,
     .hero-text-box { padding: 0 4%; }
     .col { 
         width: 100%;
-        margin: 0 0 4% 0;
+        margin: -30px 0 4% 0;
+        padding: 0;
     }
     
     
@@ -921,6 +1080,8 @@ input[type=submit]:active {
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
    
+}
+
 
 
 
@@ -928,33 +1089,53 @@ input[type=submit]:active {
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
     .contact-form {width: 100%; }
-    .jumbotron {height: 30vh;}
+/*    main page*/
+    .jumbotron {height: 35vh;}
     .mainHeading {margin-top: 40px;}
-    .mainHeading h1 {font-size: 38px;}
-    .mainHeading h2 {font-size: 13px; margin-top: -2em;}
+    .mainHeading h1 {    
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-top: 100px;;
+        letter-spacing: 5px;}
+    .mainHeading h2 {font-size: 13px;}
     .h1 {font-size: 35px;}
-    .btn-full:link {margin-top: 35px;}
+    .btn-full:link.discover {
+        margin-top: 0px;
+        letter-spacing: 3px;
+        font-size: 10px;}
     .mobileContainer {margin-top: -50px;}
-    .logo {margin-left: -20px;}
+    .logo {height: 60px;}
     .pak-showcase {margin-top:0; height: 70px;}
     .heading h2 {font-size: 40px; padding: 2px; margin-top: 0;}
     .heading p {font-size: 25px; padding: 31px;}
-    
+    .aboutHeading{
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+    }
+    .landing-page{
+        margin-top: -50px;
+    }
+
 
 /*special page*/
 	.headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
 
 /*flex properties*/
+
 	.flexContent{width: 100%; margin-top: 0;}
 	.flex-container-base2{flex-direction: column;} 
 	.flex-container-base{flex-direction: column;}
 	.flex1 {width: 100%; margin-top: 0;}
-    .flexContent h2 {font-size: 32px;}
+    .flexContent h2 {font-size: 32px; letter-spacing: 1px;}
+    /* .fullWidthFlex {margin-top: -4em;} */
 
 
+    }
+
+/* XSmall phones: from 0 to 300px */
+@media only screen and (max-width: 400px) {
+    .btn-full:link .discover{margin-top: 10px;}
 
 
-/* XSmall phones: from 0 to 480px */
-
-
-
+}
