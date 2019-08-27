@@ -1,31 +1,4 @@
 
-
-
-// $(document).ready(function() {
-
-
-// /* Scroll on buttons */
-    
-//     /* Scroll on buttons */
-//     $('.js--scroll-to-plans').click(function () {
-// 		$('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
-// 	 });
-	 
-// 	 $('.js--scroll-to-start').click(function () {
-// 		$('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
-// 	 });
-
-// 	});
-
-
-
-// No autoplay on carousel ///
-
-// $('.carousel').carousel({
-//     data-interval: false;
-// }); 
-
-
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -96,4 +69,10 @@ function closeNav() {
 		if( $(e.target).is('a') ) {
 			$(this).collapse('hide');
 		}
+	
 	});
+
+
+
+///burger ends////
+

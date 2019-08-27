@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang ="en">
 	<head>
 	<!-- 	Required Meta tabs for bootstrap -->
 		 <meta charset="utf-8">
-    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	 <meta name="viewport" content="width=device-width, initial-scale=1">
     	 <!-- Bootstrap -->
     	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,6 +13,7 @@
     	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<script src="js/script.js"> </script>
@@ -21,36 +23,48 @@
 		<link rel ="stylesheet" type="text/css" href="/ikpktours/resources/css/style.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<!-- j-query animation  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!-- Icons -->
 	<!-- 	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 		<title>IK Pakistan Tours</title>
 		</head>
 		<body>
-			<header>
-				<nav>
-
-					<div class="logo">
-						<a href="index.html">
-					<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
-				</div><a/>
-				<ul class="nav-links links">
-					<li><a href="#city">Tours</a></li>
-					<li><a href="discover.html">Discover</a></li>
-					<li><a href="adventure.html">Our Story</a></li>
-					<!-- <li><a href="#karakoram">Travel</a></li> -->
-				</ul>
-				<div class="burger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-
-				</nav>
-			</header>
+				<header>
+						<nav>
+							<div class="logo">
+								<a href="index.html">
+							<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+						</div></a>
+						<ul class="nav-links">
+							<li><a href="index.html#tours">Tours</a>
+								<ul>
+									<li><a href="#">Adventure </a></li>
+									<li><a href="#">Historic</a></li>
+									<li><a href="#">Special</a></li>
+									<li><a href="#">Upcoming</a></li>
+								</ul>
+							</li>
+						</div>
+							<li><a href="#">Discover</a>
+								<ul>
+									<li><a href="#">Pakistan </a></li>
+									<li><a href="#">Gallery </a></li>
+								</ul>
+							</li>
+							<li><a href="#">Our Story</a></li>
+						</ul>
+						<div class="burger">
+							<div class="line1"></div>
+							<div class="line2"></div>
+							<div class="line3"></div>
+						</div>
+		
+						</nav>
+					</header>
 			<!-- End header  -->
 
 
@@ -61,9 +75,9 @@
 			<div class="jumbo">
 				<div>
 				<div class="jumbotron">
-					<div class ="mainHeading"><h1>Discover Pakistan</h1>
-					<h2>Discover yourself</h2><br>
-					<a class="btn btn-full js--scroll-to-plans discover" href="#learn">Learn More</a>
+					<div class ="mainHeading js--wp-1"><h1>Discover  Pakistan</h1>
+						<div class="subheading"><h2>Discover yourself</h2><br></div>
+					<!-- <a class="btn btn-full js--scroll-to-plans discover" href="#learn">Discover Adventures</a> -->
 					</div>
 				</div>
 			</div>
@@ -75,43 +89,47 @@
 
 <!---------- About Us Section ---------------->
 <section class="section-about js--section-about">
-	<div class="container mobileContainer">
-		<div class="aboutHeading"id="learn">  
+		<div class="container mobileContainer">
+		<div class="aboutHeading js--wp-2"id="learn">  
 		<h2> As-Salamu Alaykum </h2>
 		<h3 id="about">"Peace Be Upon You"</h3> <br>
-		<div class="aboutIK"><p> We’re IK Pakistan Tours, An Upscale Memorable Travel Experience Company <br> <hr>
-			Our Mission Is To Help You experience The Joy Pakistan Has To Offer. </p> <hr>
-			<p>We hope it helps you discover yourself along the way.</p><br>
-			<a class="btn btn-full js--scroll-to-plans discover" href="#discover">Discover yourself in pakistan</a>
-			</div>
-		</div>		
-	</div>
+		<div class="aboutIK"><p> We’re IK Pakistan Tours, An Upscale Memorable Travel Experience Company <br> 
+			Our Mission Is To Help You experience all the Joy traveling in Pakistan Has To Offer. </p> 
+			<br>
+		</div>
+		<!-- insert first jquery animation -->
+		<div class="js--wp-2">
+			<h2>We Make Your visit in Pakistan Memorable </h2><br>
+		<a class="btn btn-full js--scroll-to-plans discover" href="#discover">Learn More</a>
+		<hr>
+					</div>
+				</div>
+			</div>	
+		</div>
 </section>
 
-<!-- About Us ends -->
-
-<!-- /* Pre Gallery Photos  */ -->
+<!-- /* Pre Gallery Photos-- Create a slideshow/ability to expand pictures  */ -->
 		<section class="section-pictures">
 			<ul class="pak-showcase clearfix">
 				<li class = "crop">
 					<figure>
 						<figure class="pak-photo">
-						<img class ="photo1" data-src="resources/img/8.5.jpg" alt="Pakistani Food">
+						<img class ="photo1" data-src="resources/img/showPic16.jpg" alt="Pakistani Food">
 					</figure>
 				</li>
 				 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/2.5.jpg" alt="Badshahi Mosque Lahore">
+                        <img class ="photo1" data-src="resources/img/showPic2.jpg" alt="Badshahi Mosque Lahore">
                     </figure>
                 </li>
                 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/3.5.jpg" alt="Mountains and a valley in Hunza valley">
+                        <img class ="photo1" data-src="resources/img/showPic1.jpg" alt="Mountains and a valley in Hunza valley">
                     </figure>
                 </li>
                 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/4.5.jpg" alt="Pakistani decorated truck" >
+                        <img class ="photo1" data-src="resources/img/showPic6.jpg" alt="Pakistani decorated truck" >
                     </figure>
                 </li>
                 <li class = "crop">
@@ -121,17 +139,37 @@
                 </li>
                 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/6.5.jpg" alt="Lahore Mosque door">
+                        <img class ="photo1" data-src="resources/img/8.5.jpg" alt="Lahore Mosque door">
                     </figure>
                 </li>
                 <li class = "crop">
                     <figure  class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/7.5.jpg" alt="Salt Lamps">
+                        <img class ="photo1" data-src="resources/img/showPic13.jpg" alt="Salt Lamps">
                     </figure>
                 </li>
                 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/1.5.jpg" alt ="Pakistani Flag">
+                        <img class ="photo1" data-src="resources/img/showPic4.jpg" alt ="Pakistani Flag">
+                    </figure>
+				</li>
+				<li class = "crop">
+                    <figure class="pak-photo">
+                        <img class ="photo1" data-src="resources/img/showPic15.jpg" alt ="Pakistani Flag">
+                    </figure>
+				</li>
+				<li class = "crop">
+                    <figure class="pak-photo">
+                        <img class ="photo1" data-src="resources/img/showPic8.jpg" alt ="Pakistani Flag">
+                    </figure>
+				</li>
+				<li class = "crop">
+                    <figure class="pak-photo">
+                        <img class ="photo1" data-src="resources/img/showPic9.jpg" alt ="Pakistani Flag">
+                    </figure>
+				</li>
+				<li class = "crop">
+                    <figure class="pak-photo">
+                        <img class ="photo1" data-src="resources/img/showPic14.jpg" alt ="Pakistani Flag">
                     </figure>
                 </li>
             </ul>
@@ -139,30 +177,58 @@
 	</section>
 
 	<!-- /* Pre Gallery Photos End   */ -->
+	<div class="section-steps clearfix" id="works">
+		<!-- insert second animation effect  -->
+		<div class="work js--wp-4 ">
+			<h2>How we work &mdash; Simple as 1, 2, 3</h2>
+			
+				<div class="col span-1-of-2 steps-box">
+					<div class="works-step clearfix">
+						<div>1</div>
+						<p>book an upcoming trip with us </p>
+					</div>
+					<div class="works-step clearfix">
+						<div>2</div>
+						<p>Arrive in Pakistan </p>
+					</div>
+					<div class="works-step clearfix">
+						<div>3</div>
+						<p>Be our guest, let us host you and leave your world behind</p>
+					</div>	
+				</div>
+			</div>
 
-<hr>
+		</div>
+	</div>
 
 <!-- How It Works Section -->
 
-	 <section class="section-steps clearfix facts" id="discover">
-			<div class="heading">
-					<h2>known as <br>"land of the pure"</h2></div>
+	 <section class="facts clearfix" id="discover">
+			<div class="heading js--wp-3">
+					<div class="heading2">
+						<h2>known as <br>"land of the pure"</h2></div>
 					<hr><br>
-					<ul class="headingP"><h1>Home to The second highest mountain on earth</h1>
-						<li> Eight wonder of the world</li>
+				</div>
+					<!-- insert third animation -->
+						<ul class="headingP"><h1>Home to highest mountains on planet</h1>
+							<li> 'Eight wonder of the world'</li>
 							<li>ruled by numerous empires and dynasties</li>
-							<br>
-							<li class="ready">Are you ready to explore the real pakistan?</li>
+							<li> Referred to as 'Heaven on earth' </li>
+							<br> <hr>
+						
+							<div><li class="thisPak js--wp-5" id="this"><img src="resources/img/thisPak.jpg"></li></div>
+						</div>
+
 						</ul>
 					</div>
-				</div>
+				<hr>
 		</div>
 		
 </section> 
 
+
 <!-- How It Works Ends --> 
 
-<hr>
 
 <!-- Packages Section  -->
 
@@ -174,14 +240,14 @@
 			<div class="col span-1-of-3">
 				<div class="plan-box">
 				<div class="adventure"> 
-						<a href="adventure.html"><h3>Adventure Tours</h3>
+						<a href="adventure.html" target="_blank"><h3 id="adventure">Adventurous </h3>
 						</a></div>
 					</div>
 				</div>	
 				<div class="col span-1-of-3">
 				<div class="plan-box">	
 					<div class="city">
-						<a href="city.html"><h3 id="city">City Tours</h3>
+						<a href="city.html" target="_blank"><h3 id="city">Historic</h3>
 
 					</a></div>
 				</div>
@@ -189,15 +255,16 @@
 				<div class="col span-1-of-3">	
 					<div class="plan-box">
 					<div class="special">
-						<a href="special.html"><h3>Special Tours</h3>
+						<a href="special.html" target="_blank"><h3 id="special">Special</h3>
 
 						</a></div>
 					</div>
 				</div>
+	
 				<div class="col span-3-of-3">	
 					<div class="plan-box">
 					<div class="upcoming ">
-						<a href="upcoming.html"><h3> Upcoming Tours</h3>
+						<a href="upcoming.html" target="_blank"><h3> Discover </h3>
 					
 						</a></div>
 					</div>
@@ -252,14 +319,8 @@
 				<div class="joyTech">
 					<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
 				</div>
+
 	</footer>
-
-
-
-
-
-
-
 
 
 <!-- //lazy loading -->	
@@ -267,13 +328,64 @@
   <script> const myLazyLoad = new LazyLoad ({
 	elements_selector: ".photo1" 
 });
+
+
 </script>
   <script src="resources/js/script.js"></script>
-<!--   JQuery -->
+ <!--   JQuery -->
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script></script>
+<!-- animate effects -->
+<script> 
+
+	$(document).ready(function() {
+	
+			//hover effects 
+			$("h2").hover(function(){
+    $(this).css("background-color", "yellow");
+    }, function(){
+    $(this).css("color", "black");
+  });
+
+
+	/* Animations on scroll */
+	$('.js--wp-1').hover(function(direction) {
+		$('.js--wp-1').addClass('animated pulse');
+	}, {
+	offset: '50%'
+	});
+
+	$('.js--wp-2').hover(function(direction) {
+		$('.js--wp-2').addClass('animated fadeIn');
+	}, {
+	offset: '50%'
+	});
+
+	$('.js--wp-3').hover(function(direction) {
+		$('.js--wp-3').addClass('animated fadeIn');
+	}, {
+	offset: '50%'
+	});
+
+	$('.js--wp-5').hover(function(direction) {
+		$('.js--wp-5').addClass('animated fadeIn');
+	}, {
+	offset: '10%'
+	});
+
+	$('.js--wp-4').hover(function(direction) {
+		$('.js--wp-4').addClass('animated tada');
+	}, {
+	offset: '50%'
+	});
+
+	
+	});
+</script>
+
 <!--   Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		</body>	
-
+	</body>	
 </html>

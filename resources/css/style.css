@@ -31,7 +31,7 @@ body {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
-	overflow-x: none;
+	overflow-x: hidden;
 	height: 100%;
 	width: 100%;
 	padding: 0px;
@@ -46,9 +46,9 @@ body {
 
 
 
-.row {
+.row1 {
 	max-width: 1140px;
-	margin: 10em auto;
+	margin: 2em auto;
 }
 
 
@@ -59,7 +59,7 @@ body {
 hr:before {
     display: block;
     height: 2px;
-    /* background-color: #e67e22; */
+    background-color: #e67e22;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -69,7 +69,7 @@ hr:before {
 
 h2 {
 	text-align: center;
-	letter-spacing: 5px;
+	/* letter-spacing: 5px; */
 	text-transform: capitalize;
 }
 
@@ -128,36 +128,31 @@ p {
     letter-spacing: 15px;
 }
 
-/* Main Navi*/
-
-.mobile-nav-icon i {
-font-size: 200%;
- color: #fff;
-}
-
-
-
-/* Mobile navi */
-.mobile-nav-icon {
-    float: right;
-    margin-top: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-.mobile-nav-icon i {
-    font-size: 200%;
-    color: red;
-}
-
-
-
-
-
-
 
 
 /*MOBILE NAV*/
+
+.mobile-nav-icon i {
+    font-size: 200%;
+     color: #fff;
+    }
+    
+    
+    
+    /* Mobile navi */
+    .mobile-nav-icon {
+        float: right;
+        margin-top: 30px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .mobile-nav-icon i {
+        font-size: 200%;
+        color: red;
+    }
+    
+
 
 .Navbar {
   background-color: #46ACC2;
@@ -186,12 +181,53 @@ font-size: 200%;
 
 nav {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+    justify-content: space-evenly;	
+    align-items: center;
 	min-height: 20vh;
-    background-color: #ffff;	
+    /* background-color: #fff5e6; */
+    /* #ffe4b3	 */
     font-family: aladin;
 }
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 22px 14px; 
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul  {
+    display: block;
+}
+
+
+nav ul li li a {
+    padding: 8px 14px;
+}
+
+nav ul li ul li {
+    width: 200px;
+    border-radius: 4px;
+}
+
+nav ul li ul li a:hover {
+    background-color: red;
+    width: 100%;
+}
+
+
+
+
 
 .nav-links {
 	display: flex;
@@ -233,11 +269,14 @@ nav {
 /* ----------------------------------------------- */
 
 .jumbotron {
-	background: url('../img/2.5.jpg') no-repeat;
+	background: url('../img/LahoreMosque.jpg') no-repeat;
 	background-size: cover;
 	height: 85vh;
     background-position: center;
+    border-radius: 0;
 /*    margin: -20em auto auto 5em;*/
+    box-shadow: 0 0 10px 3px white inset;
+
 }
 
 .landing-page {
@@ -248,7 +287,7 @@ nav {
 .mainHeading {
 	text-align: center;
 	color: #FFF66F;
-	margin-top: 9em;
+	margin-top: 14em;
 	text-transform: capitalize;
 
 }
@@ -256,6 +295,7 @@ nav {
 .mainHeading h1 {
     font-size: 80px;
     letter-spacing: 12px;
+    font-weight: 1000;
 
 }
 
@@ -302,10 +342,12 @@ font-family: 'Raleway', sans-serif;
 /* Main Section 2 - Photo Gallary  */
 /* ----------------------------------------------- */
 
+
+
 .pak-showcase {
 	list-style: none;
-	width: 100%;
-	margin-top: 100px;
+    width: 100%;
+    
 }
 
 .pak-showcase li {
@@ -316,20 +358,34 @@ font-family: 'Raleway', sans-serif;
 
 
 .pak-photo {
-/*	opacity: 0.7;*/
+	/* opacity: 0.7; */
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    overflow: hidden;
+    margin-top: -20px;
+    /* background-color: #000000; */
+}
+
+.pak-photo img {
+	width: 100%;
+    /* height: auto; */
+    transform: scale (1.15);
     -webkit-transform: scale(1.15);
     -ms-transform: scale(1.15);
     transform: scale(1.15);
     -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s; opacity: 0.5s;
+    /* opacity: 0.7; */
 }
 
-.pak-photo img {
-	width: 87%;
-	height: auto;
+.pak-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform:scale(1.03);
 }
+
 
 
 /* ----------------------------------------------- */
@@ -358,6 +414,11 @@ font-family: 'Raleway', sans-serif;
 
 .steps-box:last-child {
 	text-align: center;
+}
+
+.thisPak {
+    display: flex;
+    justify-content: space-around
 }
 
 
@@ -541,18 +602,21 @@ footer p {
 
 
 /** ----------------------------------------------- */
-/* Discover Page && FLEX Properties  */ 
+/* Headings
 /* ----------------------------------------------- */
 
 
+
+
 .heading h2 {
-	font-size: 100px;
+	font-size: 130px;
     padding: 50px;
     background-color: #FFF6A9;
     text-transform: capitalize;
     margin-top: 100px;
     font-family: 'Aladin', cursive;
 }
+
 
 .featuredTours h2 {
 	margin-top: 20px;
@@ -567,7 +631,7 @@ footer p {
     list-style-type: none;
     line-height: 80px;
     font-size: 200%;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-family: 'Aladin', cursive;
 } 
 
@@ -579,7 +643,14 @@ footer p {
     text-transform: capitalize;
     line-height: 100px;
 /*    font-family: raleway;
-*/}
+*/
+}
+
+
+/** ----------------------------------------------- */
+/* Discover Page  */ 
+/* ----------------------------------------------- */
+
 
 .discoverPakistan h1 {
     text-align: center;
@@ -599,6 +670,10 @@ footer p {
 
 
 
+/** ----------------------------------------------- */
+/* FLEX Properties  */ 
+/* ----------------------------------------------- */
+
 .flexParagraphs {
     
     margin: 21px 0px 0px 0px;
@@ -613,6 +688,7 @@ footer p {
 
 .secondParagraph {
     text-transform: capitalize;
+    margin-top: 70px;
 }
 
 .flex-container {
@@ -708,6 +784,10 @@ footer p {
     font-size: 15px;
 }
 
+.adventureHeading h2 {
+    background-color: white;
+}
+
 
 
 
@@ -742,8 +822,9 @@ footer p {
 }
 
 .date {
-    display: flex;
-    justify-content: space-around
+    /* display: flex;
+    justify-content: space-around */
+    line-height: 50px;
 }
 
 .ul {
@@ -753,6 +834,25 @@ footer p {
 .li {
     list-style: none;
 }
+
+.flex-container-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    width: 50%;
+}
+
+
+
+
+.vl {
+    border-left: 1px solid yellow;
+    height: 50px;
+    margin-top: 50px;
+}
+
 
 /** ----------------------------------------------- */
 /* ICONS */ 
@@ -779,11 +879,137 @@ footer p {
     margin-top: -5px;
 }
 
+/* ----------------------------------------------- */
+/* JAVASCRIPT SLIDESHOW */ 
+/* ----------------------------------------------- */
+
+
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 140vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+ background-image: url('../img/kkh1.jpg');
+
+}
+.slide2 {
+  background-image: url("../img/tPic3.jpg");
+}
+.slide3 {
+  background-image: url("../img/tPic4.jpg");
+}
+.slide4 {
+    background-image: url("../img/tPic1.jpg");
+  }
+
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
+
+
+#inspired:hover, #charge:hover, #decompress:hover {
+    background-color: red;
+  }
+
 
 /* ----------------------------------------------- */
-/* SLIDESHOW */ 
+/* Animations */
 /* ----------------------------------------------- */
 
+.js--wp-1, .js--wp-5, .js--wp-4 {
+    -webkit-animation-duration: 10s;
+       animation-duration: 10s;
+   }
+   
+   .js--wp-2, .js--wp-3, .js--wp-5 {
+    -webkit-animation-duration: 2s;
+     animation-duration: 2s;
+     opacity: 0;
+   }
+   
+   /* .js--wp-1.animated {
+     opacity: 1;
+   } */
+   
+   .js--wp-1.animated .js--wp-2.animated, .js--wp-2.animated, .js--wp-4 {
+     opacity: 1;
+   }
+
+/* .js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}  */
+
+
+/* ----------------------------------------------- */
+/* CSS CAROUSEL SLIDESHOW */ 
+/* ----------------------------------------------- */
 
 /* @-webkit-keyframes zoom {
   from {
@@ -819,9 +1045,6 @@ footer p {
   -webkit-animation: zoom 50s;
   animation: zoom 50s;
 } */
-
-
-
 
 /*.carousel-inner > .item > img { 
 	width:50%; 
@@ -945,7 +1168,7 @@ input[type=submit]:active {
 /*Mobile NAV*/
 @media screen and (max-width: 1024px) {
 	.nav.links {
-		width: 60%;
+        width: 60%;
 	}
 }
 
@@ -966,7 +1189,8 @@ input[type=submit]:active {
         align-items:center;
         width: 100%;
       	transform: translateX(100%);
-      	transition: transform 0.5s ease-in;
+          transition: transform 0.5s ease-in;
+          position: fixed;
     }
 
 
@@ -1023,7 +1247,7 @@ input[type=submit]:active {
     .hero-text-box { padding: 0 4%; }
     .col { 
         width: 100%;
-        margin: -30px 0 4% 0;
+        margin: 15px 0 4% 0;
         padding: 0;
     }
     
@@ -1087,7 +1311,7 @@ input[type=submit]:active {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    section { padding: 25px 0; }
+    section { padding: 2px 0; }
     .contact-form {width: 100%; }
 /*    main page*/
     .jumbotron {height: 35vh;}
@@ -1095,23 +1319,57 @@ input[type=submit]:active {
     .mainHeading h1 {    
         font-size: 40px;
         letter-spacing: 5px;
-        margin-top: 100px;;
+        margin-top: 145px;
         letter-spacing: 5px;}
+    .btn:link {
+        padding: 10px 20px;
+    }    
+        
     .mainHeading h2 {font-size: 13px;}
     .h1 {font-size: 35px;}
     .btn-full:link.discover {
-        margin-top: 0px;
-        letter-spacing: 3px;
-        font-size: 10px;}
+        /* margin-top: 5px;
+        display: none;
+        letter-spacing: 3px; */
+        font-size: 15px;
+        padding: 10px 10px;
+    }
     .mobileContainer {margin-top: -50px;}
-    .logo {height: 60px;}
+    .logo {height: 60px; display: none;}
     .pak-showcase {margin-top:0; height: 70px;}
-    .heading h2 {font-size: 40px; padding: 2px; margin-top: 0;}
+    
+    .heading h2 {    
+        font-size: 55px;
+        padding: 1px 0 50px;
+        margin-top: 0;
+        font-weight: 900;
+        letter-spacing: 2px;
+    }
     .heading p {font-size: 25px; padding: 31px;}
     .aboutHeading{
     text-align: center;
-    margin-top: 50px;
+    margin-top: -7px;
     padding: 10px;
+    }
+    .plan-box {
+        height: 200px;
+        width: 100%;
+        margin-bottom: -30px;
+        position: relative;
+        border: 1px solid #FFF6A9;
+        overflow: hidden;
+    }
+    .plan-box h3 {
+        line-height: 9.2;
+        color: #F0F8FF;
+        font-size: 25px;
+    }
+    .work h2 {
+        font-size: 110%;
+    }
+    .aboutIK {
+        letter-spacing: 1px;
+
     }
     .landing-page{
         margin-top: -50px;
@@ -1119,7 +1377,18 @@ input[type=submit]:active {
 
 
 /*special page*/
-	.headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
+    .headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
+    
+ /* adventure page */ 
+ .adventureHeading h2 {
+     font-size: 45px;
+ } 
+ /* JS Slideshow */
+ #slider, .wrap, .slide-content {
+         height: 50vh;
+     }   
+     
+ 
 
 /*flex properties*/
 
@@ -1139,3 +1408,4 @@ input[type=submit]:active {
 
 
 }
+
