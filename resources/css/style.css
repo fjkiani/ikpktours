@@ -32,7 +32,7 @@ body {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
-	height: 100%;
+	/* height: 100%; */
 	width: 100%;
 	padding: 0px;
     margin: 0px;
@@ -67,10 +67,13 @@ hr:before {
 }
 
 
+
+
 h2 {
 	text-align: center;
 	/* letter-spacing: 5px; */
-	text-transform: capitalize;
+    text-transform: capitalize;
+    /* background-color: yellow; */
 }
 
 h3 {
@@ -245,7 +248,9 @@ nav ul li ul li a:hover {
 	letter-spacing: 5px;
 	font-weight: bold;
 	font-stretch: 14px;
-	font-size: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .burger {
@@ -269,7 +274,7 @@ nav ul li ul li a:hover {
 /* ----------------------------------------------- */
 
 .jumbotron {
-	background: url('../img/LahoreMosque.jpg') no-repeat;
+	background: url('../img/LahoreMosqueDecom.jpg') no-repeat;
 	background-size: cover;
 	height: 85vh;
     background-position: center;
@@ -518,7 +523,7 @@ footer {
 }
 
 .footer-bottom {
-   margin-top: 50px;
+   margin-top: 90px;
 } 
 
 
@@ -697,7 +702,7 @@ footer p {
 /*	justify-content: center;  main axis  */
 	flex-wrap: wrap;
     flex-direction: column;
-    margin-top: -4em;
+    margin-top: -30px;
 }
 
 .flex1 {
@@ -788,7 +793,18 @@ footer p {
     background-color: white;
 }
 
+.mountains img {
+    width: 100%;
+}
 
+
+
+/** ----------------------------------------------- */
+/* Our Story Page */ 
+/* ----------------------------------------------- */
+.ourStory {
+    margin-top: 100px;
+}
 
 
 
@@ -854,9 +870,15 @@ footer p {
 }
 
 
+
 /** ----------------------------------------------- */
-/* ICONS */ 
+/* Special Page */ 
 /* ----------------------------------------------- */
+
+/* .fahadPic {
+    margin-top: 150px;
+} */
+
 
 .icon-big {
     font-size: 350%;
@@ -893,6 +915,7 @@ footer p {
   width: 100%;
   height: 140vh;
   overflow-x: hidden;
+  box-shadow: 0 0 10px 3px white inset;
 }
 
 .wrap {
@@ -905,18 +928,22 @@ footer p {
   background-repeat: no-repeat;
 }
 
-.slide1 {
+.slide5 {
  background-image: url('../img/kkh1.jpg');
 
 }
-.slide2 {
+.slide4 {
   background-image: url("../img/tPic3.jpg");
 }
 .slide3 {
   background-image: url("../img/tPic4.jpg");
 }
-.slide4 {
+.slide2 {
     background-image: url("../img/tPic1.jpg");
+  }
+
+.slide1 {
+    background-image: url("../img/hBridge.jpg");
   }
 
 
@@ -967,13 +994,13 @@ footer p {
 /* Animations */
 /* ----------------------------------------------- */
 
-.js--wp-1, .js--wp-5, .js--wp-4 {
+.js--wp-1, .js--wp-5, .js--wp-4  {
     -webkit-animation-duration: 10s;
        animation-duration: 10s;
    }
    
-   .js--wp-2, .js--wp-3, .js--wp-5 {
-    -webkit-animation-duration: 2s;
+   .js--wp-2, .js--wp-3, .js--wp-5, .js--wp-6, .js--wp-7, .js--wp-8,  .js--wp-9, .js--wp-10, .js--wp-11, .js--wp-12 {
+    -webkit-animation-duration: 1s;
      animation-duration: 2s;
      opacity: 0;
    }
@@ -1168,30 +1195,36 @@ input[type=submit]:active {
 /*Mobile NAV*/
 @media screen and (max-width: 1024px) {
 	.nav.links {
-        width: 60%;
-	}
+        width: 60%; }
 }
 
 
 
 @media screen and (max-width: 768px) {
         body {
-        	overflow-x: hidden;
-        }
+        	overflow-x: hidden;}
+
+   /* .navBar {
+       position: absolute;
+   } */
+
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
-        height: 75vh;
-        top: 9vh;
+        height: 50%;
+        top: 8vh;
         display: flex;
         background-color: #ffff;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         width: 100%;
-      	transform: translateX(100%);
-          transition: transform 0.5s ease-in;
-          position: fixed;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+   
     }
+
+    
 
 
     .nav-links li {
@@ -1201,7 +1234,6 @@ input[type=submit]:active {
     .burger {
         display: block;
     }
-}
 
 .nav-active {
 	transform: translateX(0%);
@@ -1235,6 +1267,7 @@ input[type=submit]:active {
 	transform: rotate(45deg) translate(-5px,-6px);
 }
 
+}
 
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -1311,7 +1344,7 @@ input[type=submit]:active {
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-    section { padding: 2px 0; }
+    /* section { padding: 2px 0; } */
     .contact-form {width: 100%; }
 /*    main page*/
     .jumbotron {height: 35vh;}
@@ -1335,7 +1368,7 @@ input[type=submit]:active {
         padding: 10px 10px;
     }
     .mobileContainer {margin-top: -50px;}
-    .logo {height: 60px; display: none;}
+    .logo {height: 60px;}
     .pak-showcase {margin-top:0; height: 70px;}
     
     .heading h2 {    
@@ -1348,8 +1381,8 @@ input[type=submit]:active {
     .heading p {font-size: 25px; padding: 31px;}
     .aboutHeading{
     text-align: center;
-    margin-top: -7px;
-    padding: 10px;
+    margin-top: 25px;
+    padding: 5px;
     }
     .plan-box {
         height: 200px;

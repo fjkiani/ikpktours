@@ -16,6 +16,7 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
+		<!-- Javascript file -->
 		<script src="js/script.js"> </script>
 		<!--Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
@@ -26,6 +27,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<!-- j-query animation  -->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!-- Icons -->
 	<!-- 	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
@@ -37,25 +39,25 @@
 						<nav>
 							<div class="logo">
 								<a href="index.html">
-							<img src="resources/img/Logo/IKlogo.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+							<img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo" class="logo"></a>
 						</div></a>
 						<ul class="nav-links">
 							<li><a href="index.html#tours">Tours</a>
 								<ul>
-									<li><a href="#">Adventure </a></li>
-									<li><a href="#">Historic</a></li>
-									<li><a href="#">Special</a></li>
-									<li><a href="#">Upcoming</a></li>
+									<li><a href="adventure.html">Adventure </a></li>
+									<li><a href="city.html">Historic</a></li>
+									<li><a href="special.html">Special</a></li>
+									<li><a href="upcoming.html">Upcoming</a></li>
 								</ul>
 							</li>
 						</div>
-							<li><a href="#">Discover</a>
-								<ul>
+							<li><a href="discover.html">Discover</a>
+								<!-- <ul>
 									<li><a href="#">Pakistan </a></li>
-									<li><a href="#">Gallery </a></li>
-								</ul>
+									<li><a href="#">Gallery </a></li> 
+								</ul> -->
 							</li>
-							<li><a href="#">Our Story</a></li>
+							<li><a href="about.html">Our Story</a></li>
 						</ul>
 						<div class="burger">
 							<div class="line1"></div>
@@ -75,22 +77,22 @@
 			<div class="jumbo">
 				<div>
 				<div class="jumbotron">
-					<div class ="mainHeading js--wp-1"><h1>Discover  Pakistan</h1>
+					<div id ="js--wp-1">
+					<div class ="mainHeading"><h1>Discover  Pakistan</h1></div>
 						<div class="subheading"><h2>Discover yourself</h2><br></div>
-					<!-- <a class="btn btn-full js--scroll-to-plans discover" href="#learn">Discover Adventures</a> -->
 					</div>
 				</div>
 			</div>
 		</div>
+		<hr>
 	</section>	
+
 				<!--  ends -->
 
-
-
 <!---------- About Us Section ---------------->
-<section class="section-about js--section-about">
+<section class="section-about js--section-about clearfix">
 		<div class="container mobileContainer">
-		<div class="aboutHeading js--wp-2"id="learn">  
+		<div class="aboutHeading"id="learn">  
 		<h2> As-Salamu Alaykum </h2>
 		<h3 id="about">"Peace Be Upon You"</h3> <br>
 		<div class="aboutIK"><p> We’re IK Pakistan Tours, An Upscale Memorable Travel Experience Company <br> 
@@ -210,6 +212,7 @@
 					<hr><br>
 				</div>
 					<!-- insert third animation -->
+					<div class ="js--wp-6">
 						<ul class="headingP"><h1>Home to highest mountains on planet</h1>
 							<li> 'Eight wonder of the world'</li>
 							<li>ruled by numerous empires and dynasties</li>
@@ -221,6 +224,7 @@
 
 						</ul>
 					</div>
+				</div>
 				<hr>
 		</div>
 		
@@ -264,7 +268,7 @@
 				<div class="col span-3-of-3">	
 					<div class="plan-box">
 					<div class="upcoming ">
-						<a href="upcoming.html" target="_blank"><h3> Discover </h3>
+						<a href="upcoming.html" target="_blank"><h3> Visit </h3>
 					
 						</a></div>
 					</div>
@@ -283,10 +287,9 @@
 		<div class="container">
 			<div class="col span-1-of-2">
 				<div ul class="footer-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="upcoming.html">Our Story</a></li>
-					<li><a href="index.html#tours">Tours</a></li>
-					<li><a href="discover.html">Discover</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="upcoming.html">Upcoming Tours</a></li>
+					<li><a href="discover.html">Discover Pakistan</a></li>
 					<ion-icon name="logo-bitcoin"></ion-icon>
 					<br>
 				</ul>
@@ -304,7 +307,7 @@
 					<br>			
 				</div>
 					<div class ="contactDetails"><h4>IK pakistan tours & travels <br> Islamabad (HQ)
-						<br> New York City <br> <hr>
+						<br> New York City <hr> <br>
 						<div class ="phoneEmail"><span>Contact<br>
 							<a href="#">+923005103185</a> (Pakistan) 
 							<br> <a href="#">+13476842656</a> (USA)
@@ -332,59 +335,79 @@
 
 </script>
   <script src="resources/js/script.js"></script>
+  <script>
+	  $(function) {
+		  var animationName = 'animated fadeIn';
+		  var animationend = 'webkit'
+	  }
+  </script>
+
+
+
+
+  <script>
+  
+	$(document).ready(function() {
+	
+	//hover effects 
+	$("h2").hover(function(){
+$(this).css("background-color", "yellow");
+}, function(){
+$(this).css("color", "black");
+
+});
+
+
+/* Animations on scroll */
+$('#js--wp-1').waypoint(function(direction) {
+$('#js--wp-1').addClass('animated pulse');
+}, {
+offset: '100%'
+});
+
+
+
+$('.js--wp-2').waypoint(function(direction) {
+$('.js--wp-2').addClass('animated fadeIn');
+console.log("offset wp2");
+}, {
+offset: '80%'
+});
+
+$('.js--wp-3').waypoint(function(direction) {
+$('.js--wp-3').addClass('animated fadeIn');
+}, {
+offset: '80%'
+});
+
+$('.js--wp-5').waypoint(function(direction) {
+$('.js--wp-5').addClass('animated fadeIn');
+}, {
+offset: '80%'
+});
+
+
+$('.js--wp-4').waypoint(function(direction) {
+$('.js--wp-4').addClass('animated tada');
+}, {
+offset: '50%'
+});
+
+
+$('.js--wp-6').waypoint(function(direction) {
+$('.js--wp-6').addClass('animated fadeIn');
+}, {
+offset: '80%'
+});
+
+
+});
+</script>
  <!--   JQuery -->
 <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script></script>
-<!-- animate effects -->
-<script> 
-
-	$(document).ready(function() {
-	
-			//hover effects 
-			$("h2").hover(function(){
-    $(this).css("background-color", "yellow");
-    }, function(){
-    $(this).css("color", "black");
-  });
-
-
-	/* Animations on scroll */
-	$('.js--wp-1').hover(function(direction) {
-		$('.js--wp-1').addClass('animated pulse');
-	}, {
-	offset: '50%'
-	});
-
-	$('.js--wp-2').hover(function(direction) {
-		$('.js--wp-2').addClass('animated fadeIn');
-	}, {
-	offset: '50%'
-	});
-
-	$('.js--wp-3').hover(function(direction) {
-		$('.js--wp-3').addClass('animated fadeIn');
-	}, {
-	offset: '50%'
-	});
-
-	$('.js--wp-5').hover(function(direction) {
-		$('.js--wp-5').addClass('animated fadeIn');
-	}, {
-	offset: '10%'
-	});
-
-	$('.js--wp-4').hover(function(direction) {
-		$('.js--wp-4').addClass('animated tada');
-	}, {
-	offset: '50%'
-	});
-
-	
-	});
-</script>
-
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
 <!--   Bootstrap -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>	

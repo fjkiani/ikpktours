@@ -1,3 +1,5 @@
+// Itinerary Details
+
 
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;
@@ -15,12 +17,11 @@ function openCity(evt, cityName) {
 
 
 
+
 /* Mobile Navbar */
 
 
 const navSlide = () => {
-
-
 
 	window.onload = navSlide;
 
@@ -52,27 +53,6 @@ const navSlide = () => {
 	}
 
 navSlide();
-
-
-function openNav() {
-  document.getElementById("navLinks").style.width = "100%";
-}
-
-
-function closeNav() {
-  document.getElementById("navLinks").style.width = "0%";
-	}
-
-
-
-	$(document).on('click','.navbar-collapse.in',function(e) {
-		if( $(e.target).is('a') ) {
-			$(this).collapse('hide');
-		}
-	
-	});
-
-
 
 ///burger ends////
 
