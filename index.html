@@ -16,15 +16,14 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
-		<style type="text/css">
-			html {
-			 scroll-behavior: smooth; 
-			 }	  
-		</style> 
-		<!-- Javascript file -->
-		<script src="js/script2.js"></script>
-		<!-- Jquery -->
-		<script src="vendors/js/jquery.waypoints.min.js"></script>
+
+			<!-- Javascript file -->
+			<script src="js/script2.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="vendors/js/jquery.waypoints.min.js"></script>
+			<script src="js/script.js"> </script>
+		<!--AOS -->	
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<!--Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
 		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
@@ -82,15 +81,16 @@
 		<section class="landing-page js--landing-page" class="container>" 
 		id="landing">
 			<div class="jumbo">
-				<div>
-				<div class="jumbotron">
-					<div id ="js--wp-1">
-					<div class ="mainHeading"><h1>Discover  Pakistan</h1></div>
-						<div class="subheading"><h2>Discover yourself</h2><br></div>
+				<div class="jumbotron ">
+					<div class="discoverPK" data-aos="fade-in">
+						<div class="discoverHeading">
+							<div class="discover"><h1>Discover Pakistan</h1></div>
+							<div class="subheading"><h2>Discover yourself</h2><br></div>
+						</div>
+					</div>	
 					</div>
 				</div>
 			</div>
-		</div>
 		<hr>
 	</section>	
 
@@ -99,7 +99,7 @@
 <!---------- About Us Section ---------------->
 <section class="section-about js--section-about clearfix">
 		<div class="container mobileContainer">
-		<div class="aboutHeading"id="learn">  
+		<div class="aboutHeading data-aos" data-aos="fade-in">  
 		<h2> As-Salamu Alaykum </h2>
 		<h3 id="about">"Peace Be Upon You"</h3> <br>
 		<div class="aboutIK"><p> We’re IK Pakistan Tours, An Upscale Memorable Travel Experience Company <br> 
@@ -107,9 +107,9 @@
 			<br>
 		</div>
 		<!-- insert first jquery animation -->
-		<div class="js--wp-2">
+		<div class= "visit" data-aos="fade-down">
 			<h2>We Make Your visit in Pakistan Memorable </h2><br>
-		<a class="btn btn-full js--scroll-to-plans discover" href="#discover">Learn More</a>
+		<a class="btn btn-full js--scroll-to-plans discover" href="#works">Learn More</a>
 		<hr>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 
 <!-- /* Pre Gallery Photos-- Create a slideshow/ability to expand pictures  */ -->
 		<section class="section-pictures">
-			<ul class="pak-showcase clearfix">
+			<ul class="pak-showcase clearfix" data-aos="fade-right">
 				<li class = "crop">
 					<figure>
 						<figure class="pak-photo">
@@ -186,9 +186,10 @@
 	</section>
 
 	<!-- /* Pre Gallery Photos End   */ -->
-	<div class="section-steps clearfix" id="works">
+
+	<section class="section-steps clearfix" id="works">
 		<!-- insert second animation effect  -->
-		<div class="work js--wp-4 ">
+		<div class="work" data-aos="fade-left">
 			<h2>How we work &mdash; Simple as 1, 2, 3</h2>
 			
 				<div class="col span-1-of-2 steps-box">
@@ -208,25 +209,24 @@
 			</div>
 
 		</div>
-	</div>
+	</section>
 
 <!-- How It Works Section -->
 
 	 <section class="facts clearfix" id="discover">
-			<div class="heading js--wp-3">
+			<div class="heading" data-aos="zoom-out">
 					<div class="heading2">
 						<h2>known as <br>"land of the pure"</h2></div>
 					<hr><br>
 				</div>
-					<!-- insert third animation -->
-					<div class ="js--wp-6">
+					<div class ="introHeading" data-aos="zoom-in">
 						<ul class="headingP"><h1>Home to highest mountains on planet</h1>
 							<li> 'Eight wonder of the world'</li>
 							<li>ruled by numerous empires and dynasties</li>
 							<li> Referred to as 'Heaven on earth' </li>
 							<br> <hr>
-						
-							<div><li class="thisPak js--wp-5" id="this"><img src="resources/img/thisPak.jpg"></li></div>
+						</div>
+							<div><li class="thisPak" data-aos="fade-right" id="this"><img src="resources/img/thisPak.jpg"></li></div>
 						</div>
 
 						</ul>
@@ -247,7 +247,7 @@
 		<a href="tours"><div id="tours">
 		</div>
 	</a>
-		<div class="flex-container1">
+		<div class="flex-container1" data-aos="fade-left">
 			<div class="col span-1-of-3">
 				<div class="plan-box">
 				<div class="adventure"> 
@@ -275,7 +275,7 @@
 				<div class="col span-3-of-3">	
 					<div class="plan-box">
 					<div class="upcoming ">
-						<a href="upcoming.html" target="_blank"><h3> Visit </h3>
+						<a href="upcoming.html" target="_blank"><h3> Discover </h3>
 					
 						</a></div>
 					</div>
@@ -341,13 +341,24 @@
 
 
 </script>
-  <script src="resources/js/script.js"></script>
+ <!-- jQuery (Bootstrap JS plugins depend on it) -->
+<!-- <script src="resources/js/script2.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script2.js"></script>
 <!--   JQuery -->
 <!-- <script src="js/jquery-2.1.4.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="vendors/js/jquery.waypoints.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
 <!--   Bootstrap -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	  duration: 1200,
+  });
+  
+</script>
 	</body>	
 </html>

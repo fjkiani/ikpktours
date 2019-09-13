@@ -4,1442 +4,1489 @@
 
 
 .module {
-  width: 300px;
-  height: 200px;
-
-  overflow-y: scroll; /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
-}
-
-* {
-    -webkit-overflow-scrolling: touch;
-}
-
-
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-
-html,
-body {
-/*	background-color: #FEC609;*/
-/*	color: #FBFF0A;*/
-	font-family: 'Aladin';
-	font-weight: 300;
-	font-size: 20px;
-	text-rendering: optimizeLegibility;
-	overflow-x: hidden;
-	/* height: 100%; */
-	width: 100%;
-	padding: 0px;
-    margin: 0px;
-    text-transform: capitalize;
-    scroll-behavior: smooth;
-}
-
-
-/* ----------------------------------------------- */
-/* REUSABLE COMPONENTS */
-/* ----------------------------------------------- */
-
-
-
-.row1 {
-	max-width: 1140px;
-	margin: 2em auto;
-}
-
-
-/* ----- HEADINGS ----- */
-
-
-
-hr:before {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-
-
-
-h2 {
-	text-align: center;
-	/* letter-spacing: 5px; */
-    text-transform: capitalize;
-    /* background-color: yellow; */
-}
-
-h3 {
-	text-align: center;
-}
-
-
-/* ----- PARAGRAPHS ----- */ 
-
-p {
-	text-align: center;
-}
-
-
-
-
-/* ----------------------------------------------- */
-/* HEADER */
-/* ----------------------------------------------- */
-
-
-#header-nav  {
-	background-color: #ffffff;
-    padding: 3em;
-    border: 2px solid #FEF641;
-}
-
-.navbar-brand {
-    margin-right: -4em;
-    line-height: inherit;
-    white-space: nowrap;
-    display: contents;
-
-}
-
-/*logo*/
-.logo {
-    height: 80px;
-    width: auto;
-    float: right;
-   /* margin-left: -15px;*/
-    }
-
-
-/*Main Navi */
-.main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 25px;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 65px;
-    letter-spacing: 15px;
-}
-
-
-
-/*MOBILE NAV*/
-
-.mobile-nav-icon i {
-    font-size: 200%;
-     color: #fff;
-    }
-    
-    
-    
-    /* Mobile navi */
-    .mobile-nav-icon {
-        float: right;
-        margin-top: 30px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    .mobile-nav-icon i {
-        font-size: 200%;
-        color: red;
-    }
-    
-
-
-.Navbar {
-  background-color: #46ACC2;
-  display: flex;
-  padding: 16px;
-  font-family: sans-serif;
-  color: white;
-}
-
-.Navbar__Link {
-  padding-right: 8px;
-}
-
-.Navbar__Items {
-  display: flex;
-}
-
-.Navbar__Items--right {
-  margin-left:auto;
-}
-
-.Navbar__Link-toggle {
-  display: none;
-}
-
-
-nav {
-	display: flex;
-    justify-content: space-evenly;	
-    align-items: center;
-	min-height: 20vh;
-    /* background-color: #fff5e6; */
-    /* #ffe4b3	 */
-    font-family: aladin;
-}
-
-nav ul li {
-    position: relative;
-}
-
-nav ul li a {
-    display: block;
-    padding: 22px 14px; 
-}
-
-nav ul li ul {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 0px 0px 4px 4px;
-}
-nav ul li:hover ul  {
-    display: block;
-}
-
-
-nav ul li li a {
-    padding: 8px 14px;
-}
-
-nav ul li ul li {
-    width: 200px;
-    border-radius: 4px;
-}
-
-nav ul li ul li a:hover {
-    background-color: red;
-    width: 100%;
-}
-
-
-
-
-
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	width: 50%;
-	margin-top: 40px;
-}
-
-.nav-links li {
-	list-style: none;
-}
-
-.nav-links a {
-	text-decoration: none;
-	letter-spacing: 5px;
-	font-weight: bold;
-	font-stretch: 14px;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.burger {
-	display: none;
-	cursor: pointer;
-}
-
-.burger div {
-	width: 25px;
-	height: 5px;
-	margin: 5px;
-	background-color: red;
-	transition: all 0.3s ease;
-}
-
-
-
-
-/* ----------------------------------------------- */
-/* Main Section 1 - Landing Page*/
-/* ----------------------------------------------- */
-
-.jumbotron {
-	background: url('../img/LahoreMosqueDecom.jpg') no-repeat;
-	background-size: cover;
-	height: 85vh;
-    background-position: center;
-    border-radius: 0;
-/*    margin: -20em auto auto 5em;*/
-    box-shadow: 0 0 10px 3px white inset;
-
-}
-
-.landing-page {
-/*	margin-top: -188px;*/
-    display: block;
-}
-
-.mainHeading {
-	text-align: center;
-	color: #FFF66F;
-	margin-top: 14em;
-	text-transform: capitalize;
-
-}
-
-.mainHeading h1 {
-    font-size: 80px;
-    letter-spacing: 12px;
-    font-weight: 1000;
-
-}
-
-.mainHeading h2 {
-	color: #ffff;
-}
-
-/*.flex-container1 {
-	display: flex;
-}*/
-
-
-
-
-
-/* ----------------------------------------------- */
-/* Main Section 2 About Us */ 
-/* ----------------------------------------------- */
-
-.aboutHeading {
-	text-align: center;
-	margin-top: 65px;
-	padding: 100px;
-}
-
-.aboutIK {
-font-family: 'Raleway', sans-serif;
-letter-spacing: 2px;
-}
-
-.aboutPK {
-	margin-top: 120px;
-	font-family: 'Raleway', sans-serif;
-}
-
-.ready {
-font-family: 'Raleway', sans-serif;
-}
-
-
-
-
-/* ----------------------------------------------- */
-/* Main Section 2 - Photo Gallary  */
-/* ----------------------------------------------- */
-
-
-
-.pak-showcase {
-	list-style: none;
-    width: 100%;
-    
-}
-
-.pak-showcase li {
-	display: block;
-	float: left;
-	width: 25%;
-}
-
-
-.pak-photo {
-	/* opacity: 0.7; */
-    width: 100%;
-    /* height: auto; */
-    overflow: hidden;
-    margin-top: -20px;
-    /* background-color: #000000; */
-}
-
-.pak-photo img {
-	width: 100%;
-    /* height: auto; */
-    transform: scale (1.15);
-    -webkit-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    transform: scale(1.15);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s; opacity: 0.5s;
-    /* opacity: 0.7; */
-}
-
-.pak-photo img:hover {
-    transform: scale(1.03);
-    opacity: 1;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform:scale(1.03);
-}
-
-
-
-/* ----------------------------------------------- */
-/* How It Works Section  -  */
-/* ----------------------------------------------- */
-
-
-
-.works-step div {
-	color: #e67e22;
-    font-size: 150%;
-    height: 54px;
-    width: 54px;
-    border: 2px solid #e67e22;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    margin-right: 25px;
-}
-
-
-.section-steps {
-	margin-top: 50px;
-	font-family: raleway;
-}
-
-.steps-box:last-child {
-	text-align: center;
-}
-
-.thisPak {
-    display: flex;
-    justify-content: space-around
-}
-
-
-
-
-/* ----------------------------------------------- */
-/* Packages Section   -  */
-/* ----------------------------------------------- */
-
-
-.plan-box {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 15px;
-    position: relative;
-    border: 2px solid #3F0C1F;
-    overflow: hidden;
-}
-
-
-.adventure  {
-	background: url('../img/sunsetk.jpg') no-repeat;
-	background-position: center;
-    width: 100%;
-	height: 125%;
-    background-size: cover;
-
-}
-
-
-.city {
-	background: url('../img/cPic8.jpg') no-repeat;
-	background-position: center;
-    width: 100%;
-	height: 120%;
-    background-size: cover;
-}
-
-.special {
-	background: url('../img/special.jpg') no-repeat;
-	background-position: center;
-    width: 100%;
-	height: 105%;
-    background-size: cover;
-
-}
-
-.upcoming {
-    background: url('../img/shangrilaLake.jpg') no-repeat;
-    background-position: center;
-    width: 100%;
-	height: 105%;
-    background-size: cover;
-}
-
-.picHeight {
-	height: 10em;
-
-}
-
-.plan-box h3 {
-	line-height: 15.2;
-	color: #F0F8FF
-
-}
-
-
-
-
-
-
-/* ----------------------------------------------- */
-/* FOOTER */ 
-/* ----------------------------------------------- */
-footer {
-    background-color: #FFF6A9;
-    padding: 50px;
-    font-size: 80%;
-    width: 100%;
-    position: relative;
+    width: 300px;
     height: 200px;
-}
+  
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  * {
+      -webkit-overflow-scrolling: touch;
+  }
+  
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+    width:100%;
+    /* overflow-x:hidden; */
+    overflow-y:hidden;
+  }
+  
+  html,
+  body {
+  /*	background-color: #FEC609;*/
+  /*	color: #FBFF0A;*/
+      font-family: 'Aladin';
+      font-weight: 300;
+      font-size: 20px;
+      text-rendering: optimizeLegibility;
+      overflow-x: auto;
+      overflow: none;
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+      text-transform: capitalize;
+      scroll-behavior: smooth;
+      
+      /* position: absolute; top:0; bottom:0; right:0; left:0; */
+  }
 
-.logo-bottom {
+  .container {
+      overflow: hidden;
+  }
+
+
+  
+  /* ----------------------------------------------- */
+  /* REUSABLE COMPONENTS */
+  /* ----------------------------------------------- */
+  
+  
+  
+  .row1 {
+      max-width: 1140px;
+      margin: 2em auto;
+  }
+  
+  
+  /* ----- HEADINGS ----- */
+  
+  
+  
+  hr:before {
+      display: block;
+      height: 2px;
+      background-color: #e67e22;
+      content: " ";
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+  }
+  
+  
+  
+  
+  h2 {
+      text-align: center;
+      /* letter-spacing: 5px; */
+      text-transform: capitalize;
+      /* background-color: yellow; */
+  }
+  
+  h3 {
+      text-align: center;
+  }
+  
+  
+  /* ----- PARAGRAPHS ----- */ 
+  
+  p {
+      text-align: center;
+  }
+  
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* HEADER */
+  /* ----------------------------------------------- */
+  
+  
+  #header-nav  {
+      background-color: #ffffff;
+      padding: 3em;
+      border: 2px solid #FEF641;
+  }
+  
+  .navbar-brand {
+      margin-right: -4em;
+      line-height: inherit;
+      white-space: nowrap;
+      display: contents;
+  
+  }
+  
+  /*logo*/
+  .logo {
+      height: 80px;
+      width: auto;
+      float: right;
+     /* margin-left: -15px;*/
+      }
+  
+  
+  /*Main Navi */
+  .main-nav {
+      float: right;
+      list-style: none;
+      margin-top: 25px;
+  }
+  
+  .main-nav li {
+      display: inline-block;
+      margin-left: 65px;
+      letter-spacing: 15px;
+  }
+  
+  
+  
+  /*MOBILE NAV*/
+  
+  .mobile-nav-icon i {
+      font-size: 200%;
+       color: #fff;
+      }
+      
+      
+      
+      /* Mobile navi */
+      .mobile-nav-icon {
+          float: right;
+          margin-top: 30px;
+          cursor: pointer;
+          display: none;
+      }
+      
+      .mobile-nav-icon i {
+          font-size: 200%;
+          color: red;
+      }
+      
+  
+  
+  .Navbar {
+    background-color: #46ACC2;
     display: flex;
-    justify-content: center;
-}
-
-.contactDetails {
-    text-align: center;
-}
-
-.contactDetails h4 {
-    text-transform: capitalize;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-.footer-bottom {
-   margin-top: 90px;
-} 
-
-
-.footer-nav {
-    list-style: none;
-    text-align: center;
-}
-
-.social-links {
-    list-style: none;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  .Navbar__Link {
+    padding-right: 8px;
+  }
+  
+  .Navbar__Items {
     display: flex;
-    justify-content: center;
-
-}
-
-.footer-nav li,
-.social-links li {
-    display: inline-block;
-    margin-right: 20px;
-    margin: 1em;
-}
-
-.footer-nav li:last-child,
-.social-links li:last-child {
-    margin-right: 0;
-}
-
-.footer-nav li a:link,
-.footer-nav li a:visited, 
-.social-links li a:link,
-.social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.footer-nav li a:hover,
-.footer-nav li a:active {
-    color: #ddd;
-}
-
-.social-links li a:link,
-.social-links li a:visited {
-    font-size: 160%;
-}
-
-.ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-.ion-social-facebook:hover {
-    color: #3b5998;
-}
-
-.ion-social-twitter:hover {
-    color: #00aced;
-}
-
-.ion-social-googleplus:hover {
-    color: #dd4b39;
-}
-
-.ion-social-instagram:hover {
-    color: #517fa4;
-}
-
-
-footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-
-
-/** ----------------------------------------------- */
-/* Headings
-/* ----------------------------------------------- */
-
-
-
-
-.heading h2 {
-	font-size: 130px;
-    padding: 50px;
-    background-color: #FFF6A9;
-    text-transform: capitalize;
-    margin-top: 100px;
-    font-family: 'Aladin', cursive;
-}
-
-
-.featuredTours h2 {
-	margin-top: 20px;
-	padding: 50px;
-    font-family: 'Raleway', sans-serif;}
-
-.headingP {
-	text-align: center;
-    /* text-decoration: underline; */
-    text-transform: capitalize;
-    padding: 50px;
-    list-style-type: none;
-    line-height: 80px;
-    font-size: 200%;
-    letter-spacing: 5px;
-    font-family: 'Aladin', cursive;
-} 
-
-
-.heading p {
-	padding: 50px;
-    margin: 10px;
-    font-size: 49px;
-    text-transform: capitalize;
-    line-height: 100px;
-/*    font-family: raleway;
-*/
-}
-
-
-/** ----------------------------------------------- */
-/* Discover Page  */ 
-/* ----------------------------------------------- */
-
-
-.discoverPakistan h1 {
-    text-align: center;
-    font-size: 50px;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-}
-
-.discoverPakistan {
-    padding: 0em 2em;
-    letter-spacing: 2px;
-    line-height: 25px;
-}
-.discoverParagraph {
-    margin-top: 30px;
-}
-
-
-
-/** ----------------------------------------------- */
-/* FLEX Properties  */ 
-/* ----------------------------------------------- */
-
-.flexParagraphs {
-    
-    margin: 21px 0px 0px 0px;
-    font-family: raleway;
-    align-content: center;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    font-size: 16px;
-    line-height: 30px;
-    
-}
-
-.secondParagraph {
-    text-transform: capitalize;
-    margin-top: 70px;
-}
-
-.flex-container {
-	display: flex;
-	align-items: center; /*cross axis*/
-/*	justify-content: center;  main axis  */
-	flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: -30px;
-}
-
-.flex1 {
-	flex: 0 1 50%;
-	width: 50%;
-    margin-top: 100px;
-
-}
-
-.adventurePic1 {
-	width: 100%;
-	display: block;
-	padding: 0px;
-	/* border: 6px solid #FAB400; */
-	margin-top: 0px;
-}
-
-.flexContent{
-	flex: 1;
-	padding: 50px;
-	text-align: center;
-	width: 50%;
-    /* margin-top: 5em; */
-    
-}
-
-.flex-container-base {
-	display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.flex-container-base2 {
-	display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-.flex2 {
-	margin-top: 1px;
-}
-
-
-
-/*//Main page flex */
-.flex-container-1 {
-	align-items: center;
-	display: flex;
-}
-
-
-
-
-/** ----------------------------------------------- 
-/* City Page */ 
-/* ----------------------------------------------- */
-
-.fullWidthFlex {
-
-	flex: 0 1 60%;
-	width: 100%;
-
-}
-
-
-/** ----------------------------------------------- */
-/* Adventure Page */ 
-/* ----------------------------------------------- */
-
-
-.adventurePicture img {
-	background-size: cover;
-    width: 100%;
-    margin-top: -1em;
-}
-
-.roof h2 {
-    font-size: 65px;
-    /* margin-top: -70px; */
-} 
-
-.headingParagraph {
-    text-decoration: underline;
-    font-size: 15px;
-}
-
-.adventureHeading h2 {
-    background-color: white;
-}
-
-.mountains img {
-    width: 100%;
-}
-
-
-
-/** ----------------------------------------------- */
-/* Our Story Page */ 
-/* ----------------------------------------------- */
-.ourStory {
-    margin-top: 100px;
-}
-
-
-
-
-/** ----------------------------------------------- */
-/* Special Page */ 
-/* ----------------------------------------------- */
-
-.hunzaParagraph  {
-	font-size: 150%;
-	letter-spacing: 6px; }
-.flexParagraphs hr {
-	border-top: none;
-	margin-top: 5rem;}	
-.hunzaParagraph2 {
-	margin-top: 100px}	
-.hr2 {background-color: none;}
-.ansooLake{margin-top: 0;}
-/*.ansooLakePic{width: 50%;}*/
-
-
-
-/** ----------------------------------------------- */
-/* Upcoming Page */ 
-
-
-.upcomingContent {
-    width: 80%;
-    padding: 0;
-    margin-top: 0;
-}
-
-.date {
-    /* display: flex;
-    justify-content: space-around */
-    line-height: 50px;
-}
-
-.ul {
-    list-style: none;
-}
-
-.li {
-    list-style: none;
-}
-
-.flex-container-3 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.column {
-    width: 50%;
-}
-
-
-
-
-.vl {
-    border-left: 1px solid yellow;
-    height: 50px;
-    margin-top: 50px;
-}
-
-
-
-/** ----------------------------------------------- */
-/* Special Page */ 
-/* ----------------------------------------------- */
-
-/* .fahadPic {
-    margin-top: 150px;
-} */
-
-
-.icon-big {
-    font-size: 350%;
-    display: block;
-    color: #e67e22;
-    margin-bottom: 10px;
-}
-
-.icon-small {
-    display: inline-block;
-    width: 30px;
-    text-align: center;
-    color: #e67e22;
-    font-size: 120%;
-    margin-right: 10px;
-    
-    /*secrets to align text and icons*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
-/* ----------------------------------------------- */
-/* JAVASCRIPT SLIDESHOW */ 
-/* ----------------------------------------------- */
-
-
-#slider,
-.wrap,
-.slide-content {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  height: 140vh;
-  overflow-x: hidden;
-  box-shadow: 0 0 10px 3px white inset;
-}
-
-.wrap {
-  position: relative;
-}
-
-.slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.slide5 {
- background-image: url('../img/kkh1.jpg');
-
-}
-.slide4 {
-  background-image: url("../img/tPic3.jpg");
-}
-.slide3 {
-  background-image: url("../img/tPic4.jpg");
-}
-.slide2 {
-    background-image: url("../img/tPic1.jpg");
-  }
-
-.slide1 {
-    background-image: url("../img/hBridge.jpg");
-  }
-
-
-.slide-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-}
-
-.slide-content span {
-  font-size: 5rem;
-  color: #fff;
-}
-
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -35px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-#arrow-left {
-  border-width: 30px 40px 30px 0;
-  border-color: transparent #fff transparent transparent;
-  left: 0;
-  margin-left: 30px;
-}
-
-#arrow-right {
-  border-width: 30px 0 30px 40px;
-  border-color: transparent transparent transparent #fff;
-  right: 0;
-  margin-right: 30px;
-}
-
-
-#inspired:hover, #charge:hover, #decompress:hover {
-    background-color: red;
-  }
-
-
-/* ----------------------------------------------- */
-/* Animations */
-/* ----------------------------------------------- */
-
-.js--wp-1, .js--wp-5, .js--wp-4  {
-    -webkit-animation-duration: 1s;
-       animation-duration: 1s;
-   }
-   
-   .js--wp-2, .js--wp-3, .js--wp-5, .js--wp-6, .js--wp-7, .js--wp-8,  .js--wp-9, .js--wp-10, .js--wp-11, .js--wp-12 {
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-     animation-duration: 1s;
-   }
-   
-   /* .js--wp-1.animated {
-     opacity: 1;
-   } */
-   
-   .js--wp-1.animated .js--wp-2.animated, .js--wp-2.animated, .js--wp-4 {
-     opacity: 1;
-   }
-
-/* .js--wp-1,
-.js--wp-2,
-.js--wp-3
-{
-    opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
-
-.js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated {
-    opacity: 1;
-}  */
-
-
-/* ----------------------------------------------- */
-/* CSS CAROUSEL SLIDESHOW */ 
-/* ----------------------------------------------- */
-
-/* @-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(1, 1);
-  }
-  to {
-    -webkit-transform: scale(1.5, 1.5);
-  }
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(1, 1);
-  }
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}  */
-
-.carousel-inner .item > img {
-  -webkit-animation: zoom 50s;
-  animation: zoom 50s;
-  position: relative;
-  /* display: none; */
-  -webkit-transition: 0.9s ease-in-out left;
-  -moz-transition: 0.9s ease-in-out left;
-  -o-transition: 0.9s ease-in-out left;
-  transition: 0.9s ease-in-out left;
-}
-/* 
-
-.carousel-inner .item > img {
-  -webkit-animation: zoom 50s;
-  animation: zoom 50s;
-} */
-
-/*.carousel-inner > .item > img { 
-	width:50%; 
-}	
-*/
-
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
   }
   
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+  .Navbar__Items--right {
+    margin-left:auto;
   }
   
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+  .Navbar__Link-toggle {
     display: none;
-    padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
   }
   
-  /* Fade in tabs */
-  @-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  
+  nav {
+      display: flex;
+      justify-content: space-evenly;	
+      align-items: center;
+      min-height: 20vh;
+      /* background-color: #fff5e6; */
+      /* #ffe4b3	 */
+      font-family: aladin;
   }
   
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  nav ul li {
+      position: relative;
   }
-
-
-
-/* ----------------------------------------------- */
-/* BUTTONS */ 
-/* ----------------------------------------------- */
-
-
-.btn:link,
-.btn:visited,
-input[type=submit] {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
-    text-decoration: none;
-    border-radius: 200px;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-
-.btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #fff666;
-    border: 1px solid #e67e22;
-    color: #000000;
-    margin-right: 10px;
-    /* margin-top: 40px; */
-    letter-spacing: 2px;
-    text-transform: capitalize
-}
-
-
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
-}
-
-.btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
-    background-color: #cf6d17;
-}
-
-.btn-full:hover,
-.btn-full:active {
-    border: 1px solid #cf6d17;
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #cf6d17;
-    color: #fff;
-}
-
-
-/* ----------------------------------------------- */
-/* MEDIA QUERIES */ 
-/* ----------------------------------------------- */
-
-
-
-/*Mobile NAV*/
-@media screen and (max-width: 1024px) {
-	.nav.links {
-        width: 60%; }
-}
-
-
-
-@media screen and (max-width: 768px) {
-        body {
-        	overflow-x: hidden;}
-
-   /* .navBar {
-       position: absolute;
-   } */
-
-    .nav-links {
-        position: fixed;
-        right: 0px;
-        height: 50%;
-        top: 8vh;
-        display: flex;
-        background-color: #ffff;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 1;
-   
+  
+  nav ul li a {
+      display: block;
+      padding: 22px 14px; 
+  }
+  
+  nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 0px 0px 4px 4px;
+  }
+  nav ul li:hover ul  {
+      display: block;
+  }
+  
+  
+  nav ul li li a {
+      padding: 8px 14px;
+  }
+  
+  nav ul li ul li {
+      width: 200px;
+      border-radius: 4px;
+  }
+  
+  nav ul li ul li a:hover {
+      background-color: red;
+      width: 100%;
+  }
+  
+  
+  
+  
+  
+  .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin-top: 40px;
+  }
+  
+  .nav-links li {
+      list-style: none;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      letter-spacing: 5px;
+      font-weight: bold;
+      font-stretch: 14px;
+      font-size: 20px;
+      display: flex;
+      justify-content: flex-start;
+  }
+  
+  .burger {
+      display: none;
+      cursor: pointer;
+  }
+  
+  .burger div {
+      width: 25px;
+      height: 5px;
+      margin: 5px;
+      background-color: red;
+      transition: all 0.3s ease;
+  }
+  
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* Main Section 1 - Landing Page*/
+  /* ----------------------------------------------- */
+  
+  .jumbotron {
+      background: url('../img/LahoreMosqueDecom.jpg') no-repeat;
+      background-size: cover;
+      height: 85vh;
+      background-position: center;
+      border-radius: 0;
+  /*    margin: -20em auto auto 5em;*/
+      box-shadow: 0 0 10px 3px white inset;
+  
+  }
+  
+  .landing-page {
+  /*	margin-top: -188px;*/
+      display: block;
+  }
+  
+  .mainHeading {
+      text-align: center;
+      color: #FFF66F;
+      margin-top: 14em;
+      text-transform: capitalize;
+  
+  }
+  
+  .mainHeading h1 {
+      font-size: 80px;
+      letter-spacing: 12px;
+      font-weight: 1000;
+  
+  }
+  
+  .mainHeading  {
+      color: #ffff;
+  }
+  
+  /*.flex-container1 {
+      display: flex;
+  }*/
+  
+  .discoverPK {
+      margin-top: 250px;
+  }
+  
+  .discoverHeading h1 {
+      font-family: 'handsome';
+      font-size: 100px;
+      background-color: white;
+  }
+  
+  
+  /* ----------------------------------------------- */
+  /* Main Section 2 About Us */ 
+  /* ----------------------------------------------- */
+  
+  .aboutHeading {
+      text-align: center;
+      margin-top: 65px;
+      padding: 100px;
+  }
+  
+  .aboutIK {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  }
+  
+  .aboutPK {
+      margin-top: 120px;
+      font-family: 'Raleway', sans-serif;
+  }
+  
+  .ready {
+  font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* Main Section 2 - Photo Gallary  */
+  /* ----------------------------------------------- */
+  
+  
+  
+  .pak-showcase {
+      list-style: none;
+      width: 100%;
+      
+  }
+  
+  .pak-showcase li {
+      display: block;
+      float: left;
+      width: 25%;
+  }
+  
+  
+  .pak-photo {
+      /* opacity: 0.7; */
+      width: 100%;
+      /* height: auto; */
+      overflow: hidden;
+      margin-top: -20px;
+      /* background-color: #000000; */
+  }
+  
+  .pak-photo img {
+      width: 100%;
+      /* height: auto; */
+      transform: scale (1.15);
+      -webkit-transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      transform: scale(1.15);
+      -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+      transition: transform 0.5s; opacity: 0.5s;
+      /* opacity: 0.7; */
+  }
+  
+  .pak-photo img:hover {
+      transform: scale(1.03);
+      opacity: 1;
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform:scale(1.03);
+  }
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* How It Works Section  -  */
+  /* ----------------------------------------------- */
+  
+  
+  
+  .works-step div {
+      color: #e67e22;
+      font-size: 150%;
+      height: 54px;
+      width: 54px;
+      border: 2px solid #e67e22;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      margin-right: 25px;
+  }
+  
+  
+  .section-steps {
+      margin-top: 50px;
+      font-family: raleway;
+  }
+  
+  .steps-box:last-child {
+      text-align: center;
+  }
+  
+  .thisPak {
+      display: flex;
+      justify-content: space-around 
+  }
+  
+  .discoverPK {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* Packages Section   -  */
+  /* ----------------------------------------------- */
+  
+  
+  .plan-box {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 15px;
+      position: relative;
+      border: 2px solid #3F0C1F;
+      overflow: hidden;
+  }
+  
+  
+  .adventure  {
+      background: url('../img/sunsetk.jpg') no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 125%;
+      background-size: cover;
+  
+  }
+  
+  
+  .city {
+      background: url('../img/cPic8.jpg') no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 120%;
+      background-size: cover;
+  }
+  
+  .special {
+      background: url('../img/special.jpg') no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 105%;
+      background-size: cover;
+  
+  }
+  
+  .upcoming {
+      background: url('../img/shangrilaLake.jpg') no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 105%;
+      background-size: cover;
+  }
+  
+  .picHeight {
+      height: 10em;
+  
+  }
+  
+  .plan-box h3 {
+      line-height: 15.2;
+      color: #F0F8FF
+  
+  }
+  
+  
+  
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* FOOTER */ 
+  /* ----------------------------------------------- */
+  footer {
+      background-color: #FFF6A9;
+      padding: 50px;
+      font-size: 80%;
+      width: 100%;
+      position: relative;
+      height: 200px;
+  }
+  
+  .logo-bottom {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .contactDetails {
+      text-align: center;
+  }
+  
+  .contactDetails h4 {
+      text-transform: capitalize;
+      font-size: 15px;
+      letter-spacing: 1px;
+  }
+  
+  .footer-bottom {
+     margin-top: 90px;
+  } 
+  
+  
+  .footer-nav {
+      list-style: none;
+      text-align: center;
+  }
+  
+  .social-links {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  
+  }
+  
+  .footer-nav li,
+  .social-links li {
+      display: inline-block;
+      margin-right: 20px;
+      margin: 1em;
+  }
+  
+  .footer-nav li:last-child,
+  .social-links li:last-child {
+      margin-right: 0;
+  }
+  
+  .footer-nav li a:link,
+  .footer-nav li a:visited, 
+  .social-links li a:link,
+  .social-links li a:visited {
+      text-decoration: none;
+      border: 0;
+      color: #888;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+  }
+  
+  .footer-nav li a:hover,
+  .footer-nav li a:active {
+      color: #ddd;
+  }
+  
+  .social-links li a:link,
+  .social-links li a:visited {
+      font-size: 160%;
+  }
+  
+  .ion-social-facebook,
+  .ion-social-twitter,
+  .ion-social-googleplus,
+  .ion-social-instagram {
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s;
+  }
+  
+  .ion-social-facebook:hover {
+      color: #3b5998;
+  }
+  
+  .ion-social-twitter:hover {
+      color: #00aced;
+  }
+  
+  .ion-social-googleplus:hover {
+      color: #dd4b39;
+  }
+  
+  .ion-social-instagram:hover {
+      color: #517fa4;
+  }
+  
+  
+  footer p {
+      color: #888;
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* Headings
+  /* ----------------------------------------------- */
+  
+  
+  
+  
+  .heading h2 {
+      font-size: 130px;
+      padding: 50px;
+      background-color: #FFF6A9;
+      text-transform: capitalize;
+      margin-top: 100px;
+      font-family: 'Aladin', cursive;
+  }
+  
+  
+  .featuredTours h2 {
+      margin-top: 20px;
+      padding: 50px;
+      font-family: 'Raleway', sans-serif;}
+  
+  .headingP {
+      text-align: center;
+      /* text-decoration: underline; */
+      text-transform: capitalize;
+      padding: 50px;
+      list-style-type: none;
+      line-height: 80px;
+      font-size: 200%;
+      letter-spacing: 5px;
+      font-family: 'Aladin', cursive;
+  } 
+  
+  
+  .heading p {
+      padding: 50px;
+      margin: 10px;
+      font-size: 49px;
+      text-transform: capitalize;
+      line-height: 100px;
+  /*    font-family: raleway;
+  */
+  }
+  
+  
+  /** ----------------------------------------------- */
+  /* Discover Page  */ 
+  /* ----------------------------------------------- */
+  
+  
+  .discoverPakistan h1 {
+      text-align: center;
+      font-size: 50px;
+      letter-spacing: 0px;
+      text-transform: capitalize;
+  }
+  
+  .discoverPakistan {
+      padding: 0em 2em;
+      letter-spacing: 2px;
+      line-height: 25px;
+  }
+  .discoverParagraph {
+      margin-top: 30px;
+  }
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* FLEX Properties  */ 
+  /* ----------------------------------------------- */
+  
+  .flexParagraphs {
+      
+      margin: 21px 0px 0px 0px;
+      font-family: raleway;
+      align-content: center;
+      letter-spacing: 0px;
+      text-transform: capitalize;
+      font-size: 16px;
+      line-height: 30px;
+      
+  }
+  
+  .secondParagraph {
+      text-transform: capitalize;
+      margin-top: 70px;
+  }
+  
+  .flex-container {
+      display: flex;
+      align-items: center; /*cross axis*/
+  /*	justify-content: center;  main axis  */
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: -30px;
+      height: 100%;
+  }
+  
+  .flex1 {
+      flex: 0 1 50%;
+      width: 50%;
+      margin-top: 100px;
+  
+  }
+  
+  .adventurePic1 {
+      width: 100%;
+      display: block;
+      padding: 0px;
+      /* border: 6px solid #FAB400; */
+      margin-top: 0px;
+  }
+  
+  .flexContent{
+      flex: 1;
+      padding: 50px;
+      text-align: center;
+      width: 50%;
+      /* margin-top: 5em; */
+      
+  }
+  
+  .flex-container-base {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  
+  .flex-container-base2 {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+  }
+  
+  .flex2 {
+      margin-top: 1px;
+  }
+  
+  
+  
+  /*//Main page flex */
+  .flex-container-1 {
+      align-items: center;
+      display: flex;
+  }
+  
+  
+  
+  
+  /** ----------------------------------------------- 
+  /* City Page */ 
+  /* ----------------------------------------------- */
+  
+  .fullWidthFlex {
+  
+      flex: 0 1 60%;
+      width: 100%;
+  
+  }
+  
+  
+  /** ----------------------------------------------- */
+  /* Adventure Page */ 
+  /* ----------------------------------------------- */
+  
+  
+  .adventurePicture img {
+      background-size: cover;
+      width: 100%;
+      margin-top: -1em;
+  }
+  
+  .roof h2 {
+      font-size: 65px;
+      /* margin-top: -70px; */
+  } 
+  
+  .headingParagraph {
+      text-decoration: underline;
+      font-size: 15px;
+  }
+  
+  .adventureHeading h2 {
+      background-color: white;
+  }
+  
+  .mountains img {
+      width: 100%;
+  }
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* Our Story Page */ 
+  /* ----------------------------------------------- */
+  .ourStory {
+      margin-top: 100px;
+  }
+  
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* Special Page */ 
+  /* ----------------------------------------------- */
+  
+  .hunzaParagraph  {
+      font-size: 150%;
+      letter-spacing: 6px; }
+  .flexParagraphs hr {
+      border-top: none;
+      margin-top: 5rem;}	
+  .hunzaParagraph2 {
+      margin-top: 100px}	
+  .hr2 {background-color: none;}
+  .ansooLake{margin-top: 0;}
+  /*.ansooLakePic{width: 50%;}*/
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* Upcoming Page */ 
+  
+  
+  .upcomingContent {
+      width: 80%;
+      padding: 0;
+      margin-top: 0;
+  }
+  
+  .date {
+      /* display: flex;
+      justify-content: space-around */
+      line-height: 50px;
+  }
+  
+  .ul {
+      list-style: none;
+  }
+  
+  .li {
+      list-style: none;
+  }
+  
+  .flex-container-3 {
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .column {
+      width: 50%;
+  }
+  
+  
+  
+  
+  .vl {
+      border-left: 1px solid yellow;
+      height: 50px;
+      margin-top: 50px;
+  }
+  
+  
+  
+  /** ----------------------------------------------- */
+  /* Special Page */ 
+  /* ----------------------------------------------- */
+  
+  /* .fahadPic {
+      margin-top: 150px;
+  } */
+  
+  
+  .icon-big {
+      font-size: 350%;
+      display: block;
+      color: #e67e22;
+      margin-bottom: 10px;
+  }
+  
+  .icon-small {
+      display: inline-block;
+      width: 30px;
+      text-align: center;
+      color: #e67e22;
+      font-size: 120%;
+      margin-right: 10px;
+      
+      /*secrets to align text and icons*/
+      line-height: 120%;
+      vertical-align: middle;
+      margin-top: -5px;
+  }
+  
+  /* ----------------------------------------------- */
+  /* JAVASCRIPT SLIDESHOW */ 
+  /* ----------------------------------------------- */
+  
+  
+  #slider,
+  .wrap,
+  .slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 140vh;
+    overflow-x: hidden;
+    box-shadow: 0 0 10px 3px white inset;
+  }
+  
+  .wrap {
+    position: relative;
+  }
+  
+  .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .slide5 {
+   background-image: url('../img/kkh1.jpg');
+  
+  }
+  .slide4 {
+    background-image: url("../img/tPic3.jpg");
+  }
+  .slide3 {
+    background-image: url("../img/tPic4.jpg");
+  }
+  .slide2 {
+      background-image: url("../img/tPic1.jpg");
     }
-
-    
-
-
-    .nav-links li {
-        opacity: 0;
+  
+  .slide1 {
+      background-image: url("../img/hBridge.jpg");
     }
-
-    .burger {
-        display: block;
-    }
-
-.nav-active {
-	transform: translateX(0%);
-}
-
-
-@keyframes navLinkFade {
-	from  {
-		opacity: 0;
-		transform: translateX(50px);
-
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0px);
-
-	}
-}
-
-.toggle .line1 {
-	transform: rotate(-45deg) translate(-5px,6px);
-
-}
-
-.toggle .line2 {
-		opacity: 0;
-	
-}
-
-.toggle .line3 {
-	transform: rotate(45deg) translate(-5px,-6px);
-}
-
-}
-
-
-/* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
-    body { font-size: 16px; }
-    section { padding: 30px 0;
-     }
-    
-    .row,
-    .hero-text-box { padding: 0 4%; }
-    .col { 
-        width: 100%;
-        margin: 15px 0 4% 0;
-        padding: 0;
-    }
-    
-    
-    .main-nav { display: none; }
-    .mobile-nav-icon {display: inline-block;}
-    
-    .main-nav {
-        float: left;
-        margin-top: 30px;
-        margin-left: 25px;
-    }
-    
-    .main-nav li {
-        display: block;
-    }
-    
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        display: block;
-        border: 0;
-        padding: 10px 0;
-        font-size: 100%;
-    }
-    
-    .sticky .main-nav { margin-top: 10px; }
-
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited { padding: 10px 0; }
-    .sticky .mobile-nav-icon { margin-top: 10px; }
-    .sticky .mobile-nav-icon i { color: #555; }
-    
-    
-    
-    h1 { font-size: 180%; }
-    h2 { font-size: 150%; }
-    
-    .long-copy {
-        width: 100%;
-        margin-left: 0%;
-    }
-    
-    .app-screen { width: 40%; }
-    .steps-box:first-child { text-align: center; }
-    
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        margin-right: 15px;
-        padding: 4px;
-        font-size: 120%;
-    }
-    
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-of-type { margin-bottom: 20px; }
-   
-}
-
-
-
-
-/* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {
-    /* section { padding: 2px 0; } */
-    .contact-form {width: 100%; }
-/*    main page*/
-    .jumbotron {height: 35vh;}
-    .mainHeading {margin-top: 40px;}
-    .mainHeading h1 {    
-        font-size: 40px;
-        letter-spacing: 5px;
-        margin-top: 145px;
-        letter-spacing: 5px;}
-    .btn:link {
-        padding: 10px 20px;
-    }    
-        
-    .mainHeading h2 {font-size: 13px;}
-    .h1 {font-size: 35px;}
-    .btn-full:link.discover {
-        /* margin-top: 5px;
-        display: none;
-        letter-spacing: 3px; */
-        font-size: 15px;
-        padding: 10px 10px;
-    }
-    .mobileContainer {margin-top: -50px;}
-    .logo {height: 60px;}
-    .pak-showcase {margin-top:0; height: 70px;}
-    
-    .heading h2 {    
-        font-size: 55px;
-        padding: 1px 0 50px;
-        margin-top: 0;
-        font-weight: 900;
-        letter-spacing: 2px;
-    }
-    .heading p {font-size: 25px; padding: 31px;}
-    .aboutHeading{
+  
+  
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
-    margin-top: 25px;
-    padding: 5px;
+  }
+  
+  .slide-content span {
+    font-size: 5rem;
+    color: #fff;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  #arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+  }
+  
+  #arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+  }
+  
+  
+  #inspired:hover, #charge:hover, #decompress:hover {
+      background-color: red;
     }
-    .plan-box {
-        height: 200px;
-        width: 100%;
-        margin-bottom: -30px;
-        position: relative;
-        border: 1px solid #FFF6A9;
-        overflow: hidden;
-    }
-    .plan-box h3 {
-        line-height: 9.2;
-        color: #F0F8FF;
-        font-size: 25px;
-    }
-    .work h2 {
-        font-size: 110%;
-    }
-    .aboutIK {
-        letter-spacing: 1px;
-
-    }
-    .landing-page{
-        margin-top: -50px;
-    }
-
-
-/*special page*/
-    .headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
-    
- /* adventure page */ 
- .adventureHeading h2 {
-     font-size: 45px;
- } 
- /* JS Slideshow */
- #slider, .wrap, .slide-content {
-         height: 50vh;
-     }   
+  
+  
+  /* ----------------------------------------------- */
+  /* Animations */
+  /* ----------------------------------------------- */
+  
+  .js--wp-1, .js--wp-5, .js--wp-4  {
+      -webkit-animation-duration: 1s;
+         animation-duration: 1s;
+     }
      
- 
+     .js--wp-2, .js--wp-3, .js--wp-5, .js--wp-6, .js--wp-7, .js--wp-8,  .js--wp-9, .js--wp-10, .js--wp-11, .js--wp-12 {
+      opacity: 0;
+      -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+     }
+     
+     /* .js--wp-1.animated {
+       opacity: 1;
+     } */
+     
+     .js--wp-1.animated .js--wp-2.animated, .js--wp-2.animated, .js--wp-4 {
+       opacity: 1;
+     }
+  
+  /* .js--wp-1,
+  .js--wp-2,
+  .js--wp-3
+  {
+      opacity: 0;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+  }
+  
+  .js--wp-4 {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+  }
+  
+  .js--wp-1.animated,
+  .js--wp-2.animated,
+  .js--wp-3.animated {
+      opacity: 1;
+  }  */
+  
+/*   
+  .box {
+      width: 400px;
+      height: 100px;
+      margin: 100px auto;
+      padding-top: 50px;
+      background: 
+  } */
 
-/*flex properties*/
 
-	.flexContent{width: 100%; margin-top: 0;}
-	.flex-container-base2{flex-direction: column;} 
-	.flex-container-base{flex-direction: column;}
-	.flex1 {width: 100%; margin-top: 0;}
-    .flexContent h2 {font-size: 32px; letter-spacing: 1px;}
-    /* .fullWidthFlex {margin-top: -4em;} */
-
-
+  /* ----------------------------------------------- */
+  /* CSS CAROUSEL SLIDESHOW */ 
+  /* ----------------------------------------------- */
+  
+  /* @-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
     }
+    to {
+      -webkit-transform: scale(1.5, 1.5);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.5, 1.5);
+    }
+  }  */
+  
+  .carousel-inner .item > img {
+    -webkit-animation: zoom 50s;
+    animation: zoom 50s;
+    position: relative;
+    /* display: none; */
+    -webkit-transition: 0.9s ease-in-out left;
+    -moz-transition: 0.9s ease-in-out left;
+    -o-transition: 0.9s ease-in-out left;
+    transition: 0.9s ease-in-out left;
+  }
+  /* 
+  
+  .carousel-inner .item > img {
+    -webkit-animation: zoom 50s;
+    animation: zoom 50s;
+  } */
+  
+  /*.carousel-inner > .item > img { 
+      width:50%; 
+  }	
+  */
+  
+  
+  /* Style the tab */
+  .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      -webkit-animation: fadeEffect 1s;
+      animation: fadeEffect 1s;
+    }
+    
+    /* Fade in tabs */
+    @-webkit-keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+    @keyframes fadeEffect {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  
+  
+  
+  /* ----------------------------------------------- */
+  /* BUTTONS */ 
+  /* ----------------------------------------------- */
+  
+  
+  .btn:link,
+  .btn:visited,
+  input[type=submit] {
+      display: inline-block;
+      padding: 10px 30px;
+      font-weight: 300;
+      text-decoration: none;
+      border-radius: 200px;
+      -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+      transition: background-color 0.2s, border 0.2s, color 0.2s;
+  }
+  
+  
+  .btn-full:link,
+  .btn-full:visited,
+  input[type=submit] {
+      background-color: #fff666;
+      border: 1px solid #e67e22;
+      color: #000000;
+      margin-right: 10px;
+      /* margin-top: 40px; */
+      letter-spacing: 2px;
+      text-transform: capitalize
+  }
+  
+  
+  
+  .btn-ghost:link,
+  .btn-ghost:visited {
+      border: 1px solid #e67e22;
+      color: #e67e22;
+  }
+  
+  .btn:hover,
+  .btn:active,
+  input[type=submit]:hover,
+  input[type=submit]:active {
+      background-color: #cf6d17;
+  }
+  
+  .btn-full:hover,
+  .btn-full:active {
+      border: 1px solid #cf6d17;
+  }
+  
+  .btn-ghost:hover,
+  .btn-ghost:active {
+      border: 1px solid #cf6d17;
+      color: #fff;
+  }
+  
 
-/* XSmall phones: from 0 to 300px */
-@media only screen and (max-width: 400px) {
-    .btn-full:link .discover{margin-top: 10px;}
+/* 
+testing */
 
 
-}
+  
+  /* ----------------------------------------------- */
+  /* MEDIA QUERIES */ 
+  /* ----------------------------------------------- */
+  
+  
+  
+  /*Mobile NAV*/
+  @media screen and (max-width: 1024px) {
+      .nav.links {
+          width: 60%; }
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+          body {
+              overflow-x: hidden;}
+  
+     /* .navBar {
+         position: absolute;
+     } */
+  
+      .nav-links {
+          position: fixed;
+          right: 0px;
+          height: 50%;
+          top: 8vh;
+          display: flex;
+          background-color: #ffff;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          transform: translateX(100%);
+          transition: transform 0.5s ease-in;
+          z-index: 1;
+     
+      }
+  
+      
+  
+  
+      .nav-links li {
+          opacity: 0;
+      }
+  
+      .burger {
+          display: block;
+      }
+  
+  .nav-active {
+      transform: translateX(0%);
+  }
+  
+  
+  @keyframes navLinkFade {
+      from  {
+          opacity: 0;
+          transform: translateX(50px);
+  
+      }
+      to {
+          opacity: 1;
+          transform: translateX(0px);
+  
+      }
+  }
+  
+  .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px,6px);
+  
+  }
+  
+  .toggle .line2 {
+          opacity: 0;
+      
+  }
+  
+  .toggle .line3 {
+      transform: rotate(45deg) translate(-5px,-6px);
+  }
+  
+  }
+  
+  
+  /* Small phones to small tablets: from 481px to 767px */
+  @media only screen and (max-width: 767px) {
+      body { font-size: 16px; }
+      section { padding: 30px 0;
+       }
+      
+      .row,
+      .hero-text-box { padding: 0 4%; }
+      .col { 
+          width: 100%;
+          margin: 15px 0 4% 0;
+          padding: 0;
+      }
+      
+      
+      .main-nav { display: none; }
+      .mobile-nav-icon {display: inline-block;}
+      
+      .main-nav {
+          float: left;
+          margin-top: 30px;
+          margin-left: 25px;
+      }
+      
+      .main-nav li {
+          display: block;
+      }
+      
+      .main-nav li a:link,
+      .main-nav li a:visited {
+          display: block;
+          border: 0;
+          padding: 10px 0;
+          font-size: 100%;
+      }
+      
+      .sticky .main-nav { margin-top: 10px; }
+  
+      .sticky .main-nav li a:link,
+      .sticky .main-nav li a:visited { padding: 10px 0; }
+      .sticky .mobile-nav-icon { margin-top: 10px; }
+      .sticky .mobile-nav-icon i { color: #555; }
+      
+      
+      
+      h1 { font-size: 180%; }
+      h2 { font-size: 150%; }
+      
+      .long-copy {
+          width: 100%;
+          margin-left: 0%;
+      }
+      
+      .app-screen { width: 40%; }
+      .steps-box:first-child { text-align: center; }
+      
+      .works-step div {
+          height: 40px;
+          width: 40px;
+          margin-right: 15px;
+          padding: 4px;
+          font-size: 120%;
+      }
+      
+      .works-step { margin-bottom: 20px; }
+      .works-step:last-of-type { margin-bottom: 20px; }
+     
+  }
+  
+  
+  
+  
+  /* Small phones: from 0 to 480px */
+  @media only screen and (max-width: 480px) {
+      /* section { padding: 2px 0; } */
+      .contact-form {width: 100%; }
+  /*    main page*/
+      .jumbotron {height: 35vh;}
+      /* .this img {
+          background:url('../img/discoverPakSm.jpg')
+      } */
+      .mainHeading {margin-top: 40px;}
+      .mainHeading h1 {    
+          font-size: 40px;
+          letter-spacing: 5px;
+          margin-top: 145px;
+          letter-spacing: 5px;}
+      .btn:link {
+          padding: 10px 20px;}
+       .discover h1 {
+        font-size: 50px;
+        margin-top: -3em;
+       }     
+      
+          
+      .mainHeading h2 {font-size: 13px;}
+      .h1 {font-size: 35px;}
+      .btn-full:link.discover {
+          /* margin-top: 5px;
+          display: none;
+          letter-spacing: 3px; */
+          font-size: 15px;
+          padding: 10px 10px;
+      }
+      .mobileContainer {margin-top: -50px;}
+      .logo {height: 60px;}
+      .pak-showcase {margin-top:0; height: 70px;}
+      
+      .heading h2 {    
+          font-size: 55px;
+          padding: 1px 0 50px;
+          margin-top: 0;
+          font-weight: 900;
+          letter-spacing: 2px;
+      }
+      .heading p {font-size: 25px; padding: 31px;}
+      .aboutHeading{
+      text-align: center;
+      margin-top: 25px;
+      padding: 5px;
+      }
+      .plan-box {
+          height: 200px;
+          width: 100%;
+          margin-bottom: -30px;
+          position: relative;
+          border: 1px solid #FFF6A9;
+          overflow: hidden;
+      }
+      .plan-box h3 {
+          line-height: 9.2;
+          color: #F0F8FF;
+          font-size: 25px;
+      }
+      .work h2 {
+          font-size: 110%;
+      }
+      .aboutIK {
+          letter-spacing: 1px;
+  
+      }
+      .landing-page{
+          margin-top: -50px;
+      }
 
+  
+  
+  /*special page*/
+      .headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
+      
+   /* adventure page */ 
+   .adventureHeading h2 {
+       font-size: 45px;
+   } 
+   /* JS Slideshow */
+   #slider, .wrap, .slide-content {
+           height: 50vh;
+       }   
+       
+   
+  
+  /*flex properties*/
+  
+      .flexContent{width: 100%; margin-top: 0;}
+      .flex-container-base2{flex-direction: column;} 
+      .flex-container-base{flex-direction: column;}
+      .flex1 {width: 100%; margin-top: 0;}
+      .flexContent h2 {font-size: 32px; letter-spacing: 1px;}
+      /* .fullWidthFlex {margin-top: -4em;} */
+  
+  
+      }
+  
+  /* XSmall phones: from 0 to 300px */
+  @media only screen and (max-width: 400px) {
+      .btn-full:link .discover{margin-top: 10px;}
+  
+  
+  }
+  
+  
