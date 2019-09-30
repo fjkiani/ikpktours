@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang ="en">
 	<head>
 	<!-- 	Required Meta tabs for bootstrap -->
 		 <meta charset="utf-8">
-    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
     	 <meta name="viewport" content="width=device-width, initial-scale=1">
     	 <!-- Bootstrap -->
     	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,85 +13,74 @@
     	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
+		<!-- Javascript file -->
+		<script src="js/script2.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="vendors/js/jquery.waypoints.min.js"></script>
 		<script src="js/script.js"> </script>
+		<!--AOS -->	
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+		<!--Slick Slideshow -->
 		<!--Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
 		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
 		<link rel ="stylesheet" type="text/css" href="/ikpktours/resources/css/style.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<!-- Icons -->
-	<!-- 	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
+		<!--<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 		<title>IK Pakistan Tours</title>
 		</head>
 		<body>
 				<header>
-						<nav>
+						<nav class = "sticky">
 							<div class="logo">
 								<a href="index.html">
-							<img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo" class="logo"></a>
-						</div></a>
-						<ul class="nav-links">
-							<li><a href="index.html#tours">Tours</a>
-								<ul>
-									<li><a href="city.html">Historic</a></li>
-									<li><a href="special.html">Special</a></li>
-									<li><a href="upcoming.html">Upcoming</a></li>
-								</ul>
-							</li>
-						</div>
-							<li><a href="index.html#about">Discover</a>
-								<ul>
-									<li><a href="discover.html">Pakistan </a></li>
-									<li><a href="#">Gallery </a></li>
-								</ul>
-							</li>
-							<li><a href="#">Our Story</a></li>
-						</ul>
-						<div class="burger">
-							<div class="line1"></div>
-							<div class="line2"></div>
-							<div class="line3"></div>
-						</div>
-		
-						</nav>
+								<img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo" class="logo"></a>
+							</div></a>
+							<ul class="nav-links">
+								<li><a href="index.html#tours">Tours</a>
+								</li>
+								<li><a href="discover.html">Discover</a>
+								</li>
+								<li><a href="about.html">Our Story</a></li>
+							</ul>
+							<div class="burger">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+							</div>
+			
+							</nav>
 					</header>
 
 			<!-- End header  -->
 	
-	<!-- Main Heading Section -->	
-
-	<div class="city-page js--adventure-page">
-			<div class="heading adventureHeading">
-				<!-- <div class="thisPak" id="this"><img src="resources/img/thrillingAdventures.jpg"></div> -->
-		</div>
-	</div>
-<!-- <hr style="background-color:white;"> -->
-<br>
 	<section class="flex-container clearfix">
-			<!-- <div class="fullWidthFlex flex2">
-				<img src="resources/img/kkh1.jpg" alt="Faisal Mosque In Islamabad"class="adventurePic1">
-			</div> -->
-				<div class="flexContent">
-					<div class="headingP"><h2 id="karakoram2">Home Of World's Most Geologically Active Areas </div></h2>
-							
-					<p class="flexParagraphs">Blessed with unique landscape, Pakistan is home to some of the mightiest mountain ranges, luscious grand valleys, rivers  and longest glaciers outside of the Polar region on earth </p> <br>
+			<div class="heading">
+				<h2>Home Of World's Most Geologically Active Areas</h2>
+			</div>		
+				<div class="flexContent">							
+					<p class="flexParagraphs">Blessed with unique landscape, Pakistan is home to some of the mightiest mountain ranges, luscious valleys and longest glaciers outside of Polar region</p> <br>
 						<br>	
 				</div>
 		
-				<div class="wrap imageSlider">
+				<div class="wrap imageSlider"  data-aos="fade-in">
 						<div id="arrow-left" class="arrow"></div>
 						<div id="slider">
 							
 						  <div class="slide slide1">
 							<div class="slide-content">
-							  <!-- <span>Image One</span> -->
+									<!-- <div class="carousel-caption">
+											<h3>Attabad Lake Hunza Valley</h3>
+											<p>Northern Special Tours</p>
+										</div> -->
 								</div>
 						  </div>
 						  <div class="slide slide2">
@@ -114,22 +104,30 @@
 							</div>
 						</div>
 						<div id="arrow-right" class="arrow"></div>
+						
 					  </div>
 					</div>
+				
 
 		<section>
 				<div class="flex-container">
 				<div class="flex1">
 				</div>
-				<div class="flexContent">
+				<div class="flexContent" data-aos="fade-in">
 					<br>
-					<i><H2> Featuring.</H2> </i><br>
+					<i class="aoc" data-aos="fade-in"><H2> Featuring.</H2> </i><br>
 					<div class="mountains js--wp-1" id="this"><img src="resources/img/mountains.jpg"></div>
 					<!-- <h2><i>Mughal Dynasty </i></h2> -->
-					<p class="flexParagraphs">The Mughals were patrons of architecture, who left behind a rich culture that lived on after their influence had ended. The monuments in <b>Lahore</b> are reminders of the roles various rulers played in the city's history. <br> <br>
-					
-						The Mughal rulers built their forts, palaces, gardens and mosques for queens, emperors and other noblemen in and around Lahore to project power, authority and impress their subjects through their display of wealth.
-					 </p>
+					<ul class="headingP"> Three of the highest mountains planet<br> <br>
+						<li class="aoc" data-aos="fade-in">
+							<h1>The Himalayas</h1><br>home to 9 of 10 highest Peaks in the world</li>
+							<br> <br>
+						<li class="aoc" data-aos="fade-in">
+							<h1>Karakoram</h1>Home of the second highest mountain in the world, the "savage" K2 mountain<br>
+						</li><br><br>
+						<li class="aoc" data-aos="fade-in">
+							<h1>Hindu Kush</h1><br>refers to the last great 'killer' mountains</li>
+					</ul>
 					 <br>
 					 <hr>
 						 </div>
@@ -141,34 +139,21 @@
 
 		</section>
 
-		
-		
 
-
-
-	
-
-
-						<!-- <li>luscious grand valleys</li>
-						<li>mightiest mountains on earth</li>
-						<li>Longest glaciers</li> -->
-
-
-
-<section class="flex-container clearfix">
+	<section class="flex-container clearfix">
 		<div id="karakoram"></div>
 		<div class="fullWidthFlex headingPic">
 		<img src="resources/img/himalayas.jpg" alt="Solitude at Saral lake, Neelum valley, Kashmir"class="adventurePic1">
 	</div> 
 	<div class="flexContent">
 		<ul class="roof"><h2 id="karakoram2">blessed with unique landscape  </h2> </ul>
-		<p class="flexParagraphs">home to some of the mightiest mountain ranges on earth, luscious grand valleys and longest rivers and  glaciers outside of the Polar region, Pakistan is the ultimate destination for adventure travel.</p>
+		<!-- <p class="flexParagraphs">home to some of the mightiest mountain ranges on earth, luscious grand valleys and longest rivers and  glaciers outside of the Polar region, Pakistan is the ultimate destination for adventure travel.</p> -->
 		<br>
 		<p class="secondParagraph">
 			With 108 peaks above 7,000 metres and Five of the 14 highest peaks in the world known as "eight-thousanders", The Northern Pakistan posses the most fascinating mountains on earth.
 		</p>
 		<br>
-		<a class="btn btn-full js--scroll-to-plans discover" href="upcoming.html">View Upcoming trips</a>
+		<a class="btn btn-full js--scroll-to-plans discover" href="upcoming.html">Conquer your adventure</a>
 		<hr>
  </div> 
 
@@ -212,22 +197,23 @@
 
 <!-- Footer Section -->
 
+
 <footer>
 		<div class="container">
 			<div class="col span-1-of-2">
 				<div ul class="footer-nav">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="index.html#tours">Upcoming Tours</a></li>
-					<li><a href="discover.html">Discover</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="upcoming.html">Upcoming Tours</a></li>
+					<li><a href="discover.html">Discover Pakistan</a></li>
 					<ion-icon name="logo-bitcoin"></ion-icon>
 					<br>
 				</ul>
 				<ul class="social-links">
 					<ion-icon name="logo-bitcoin"></ion-icon>
-					<li><a href="#"><i class="ion-logo-bitcoin"></i></a></li>
-					<li><a href="#"><i class="ion-social-youtube"></i></a></li>
-					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					<li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+					<li><a href="#"><i class="ion-logo-youtube"></i></a></li>
+					<li><a href="#"><i class="ion-logo-facebook"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -237,13 +223,13 @@
 					<br>			
 				</div>
 					<div class ="contactDetails"><h4>IK pakistan tours & travels <br> Islamabad (HQ)
-						<br> New York City <br> <hr>
+						<br> New York City <hr> <br>
 						<div class ="phoneEmail"><span>Contact<br>
 							<a href="#">+923005103185</a> (Pakistan) 
 							<br> <a href="#">+13476842656</a> (USA)
 							<br> <a href="#">info@ikpktours.com</a>
 							</span>
-	
+
 						</div>
 						
 		
@@ -252,6 +238,7 @@
 				<div class="joyTech">
 					<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
 				</div>
+</div>
 	</footer>
 
 
@@ -309,11 +296,24 @@
 		});
 		
 		startSlide();
-		 </script>
-		 <!-- //Javascript slideshow ends -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</script>
+<!-- <script src="resources/js/script2.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/script2.js"></script>
+<!--   JQuery -->
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+<!--   Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+	  duration: 1200,
+  });
+			</script>
 		</body>	
 
 </html>

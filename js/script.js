@@ -17,7 +17,6 @@ function openCity(evt, cityName) {
 
 
 
-
 /* Mobile Navbar */
 
 
@@ -53,6 +52,4 @@ const navSlide = () => {
 	}
 
 navSlide();
-
-///burger ends////
 
