@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
 
 			 /* For the sticky navigation */
@@ -11,7 +10,18 @@ $(document).ready(function() {
         }
     }, {
       offset: '60px;'
-    });
+		});
+
+		
+				    /* Scroll on buttons */
+						$('.js--scroll-to-plans').click(function () {
+							$('html, body').animate({scrollTop: $('.js--section-plans').offset().top}, 1000); 
+					 });
+					 
+					 $('.js--scroll-to-start').click(function () {
+							$('html, body').animate({scrollTop: $('.js--section-features').offset().top}, 1000); 
+					 });
+
 
 			//   hover effects 
 			$("h2").hover(function(){
@@ -21,16 +31,25 @@ $(document).ready(function() {
 
 
 		    // Animation on scroll using waypoint - > replaced with AOC
-			$('.js--wp-1').waypoint(function(direction) {
-				$('.js--wp-1').addClass('animated pulse');
-				}, {
-					offset: '50%'
-			});	
+			// $('.js--wp-1').waypoint(function(direction) {
+			// 	$('.js--wp-1').addClass('animated pulse');
+			// 	}, {
+			// 		offset: '50%'
+			// });	
 				
-	});		
-	
-	
+		});		
 
 
+
+		
 	
 	});
+
+
+	///loader
+	$(window).on("load",function(){
+		$(".loader-wrapper").fadeOut("slow");
+	});
+
+
+	

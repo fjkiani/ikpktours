@@ -1,5 +1,7 @@
-// Itinerary Details
 
+
+
+// Itinerary Details
 
 function openCity(evt, cityName) {
 	var i, tabcontent, tablinks;

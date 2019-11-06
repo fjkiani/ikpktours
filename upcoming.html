@@ -4,7 +4,11 @@
 	<!-- 	Required Meta tabs for bootstrap -->
 		 <meta charset="utf-8">
     	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    	 <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- W3 Slideshow -->
+         <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+         <link rel ="stylesheet" type="text/css" href="resources/css/style.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     	 <!-- Bootstrap -->
     	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,19 +17,22 @@
 		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
-		<script src="js/script.js"> </script>
-		<!--Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
-		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
+        <link rel ="stylesheet" type="text/css" href="resources/css/style.css">
 		<link rel ="stylesheet" type="text/css" href="/ikpktours/resources/css/style.css">
+        <!-- JavaScript
+        <script src="js/script.js"> </script>
+        <script src="js/script2.js"> </script> -->
+        <!--Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Aladin&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-
 		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+    
 		<!-- Icons -->
-	<!-- 	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
 		<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 		<title>IK Pakistan Tours</title>
 		</head>
@@ -51,7 +58,12 @@
 			
 							</nav>
 					</header>
-			<!-- End header  -->
+            <!-- End header  -->
+            
+            <!-- Loader 
+		<div class="loader-wrapper">
+				<span class="loader"><span class="loader-inner"></span></span>
+			  </div> -->
 
 	<!-- Main Heading Section -->
 			<section class="adventure-page js--adventure-page">
@@ -60,77 +72,132 @@
 					<h2>upcoming trips in Pakistan with IK tours</h2></div>
 					<br>
 					<div class="headingP">
-							<a class="btn btn-full js--scroll-to-plans discover" href="#karakoram">Discover Adventures</a>
+							<a class="btn btn-full js--scroll-to-plans discover" href="#adventures">Discover Adventures</a>
                     </div>
-                
-				<br>
-			<hr>
+                    <hr>
+                    <br>
 
-	</section>
+    </section>
+    
+    
 
     
 
 <!-- Adventure Packages Section -->
+<section>
+        <div class="w3-content w3-display-container slider" id="div1">
+                <img class="mySlides" src="resources/img/WazirKhan.png" style="width:100%">
+                <img class="mySlides" src="resources/img/aLake.jpg" style="width:100%">
+                <img class="mySlides" src="resources/img/special.jpg" style="width:100%">
+                <img class="mySlides" src="resources/img/tPic2.jpg" style="width:100%">
+              
+                <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a>
+              </div>
+</section>
 
-<section class="flex-container clearfix">
-		<div class="flex1 headingPic">
-        <img src="resources/img/aLake1.jpg" alt="Solitude at Saral lake, Neelum valley, Kashmir"class="adventurePic1">
-    </div>
+<section class="flex-container container-upcoming clearfix" id="adventures">
+          
 	<div class="upcomingHeading headingP">
-        <h1 id="headingP">from cities to the valley serenity tour</h1><br>
+        <h1 id="headingP">cities to the valley serenity tour</h1><br>
         <div class="date">
-            <h2>October 11, 2019 - October 20, 2019 </h2>
+            <h2>October 11-20 </h2>
         </div>
-	</div>
+    </div>
+    <div class="paragraphSection clearfix flex-container container-upcoming" id="aboutParagraph">
         <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
                 <button class="tablinks" onclick="openCity(event, 'Details')">Details</button>
+                <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
                 <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
               </div> <br>
+
+              <div id="Details" class="tabcontent">
+                    <div class="plansDetails flexContent seeking">
+                        <div class="plansHeading">
+                            <h1>find your Peace Here</h1></div>
+                            <div class="seeking"> 
+                                <h3>Are you seeking answers to help you discover yourself?</h3></div>
+                            <br>
+                            <div class="flexParagraphs"><p>Then this journey is for you </p>
+                            
+                                    
+                                <hr> <br>
+                                <div class ="details" data-aos="ease-in">
+                                        <ul class="headingP">
+                                            <div class="listHeading">
+                                                <h3>Our Journey</h3>
+                                            </div>
+                                            <li>From the heart of Pakistan, Lahore to "Heaven on earth", Hunza Valley</li> <br>
+                                            <div class="listHeading">
+                                                <h3>What to expect</h3>
+                                            </div>
+                                            <li>Get closer to your inner potential. This trip is designed to help you overcome challenges you think could be holding you back from unlocking your full potential</li><br>
+                                            <li>Leave your worries behind</li>
+
+                                                 </ul>
+                                        
+                                            </div>
+                                            <a class="btn btn-full js--scroll-to-plans discover"  href="https://forms.gle/5cGeMF97GznshnF57" target="_blank" >Book</a>
+                                            <hr>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            
+                  </div>
               
               <div id="Itinerary" class="tabcontent">
-                <div class="date ItineraryItems">
-                    <div class="ItineraryItems">
-                        <ul class="headingP days heading">
-                            <h1>Day 1</h1>
-                            <div class ="plans">
-                                <li><p>Arrival in Lahore. Rest chill day, local sightseeing, lunch/dinner</p></li>    
-
-                                         
-                        </ul>
-                    </div>
-                </div>
-              </div>
-            
-              <div id="Details" class="tabcontent">
-                    <div class="date listItems heading">
-                            <ul class="headingP days">
-                                <h1>Day 1</h1>
-                                <div class ="plans">
-                                    <li><p>Arrival in Lahore. Rest chill day, local sightseeing, lunch/dinner</p></li>       
-                        </ul>
-                    </div>
-                  </div>
+                  <div class="plansDetails flexContent">
+                        <div class="upcomingHeading">
+                            <h1>Let's do this</h1>
+                            <h3>5 days Lahore To Hunza Valley Tour</h3>
+                            <div class="flexParagraphs">
+                                <p>Are you on a search for something great? Are you seeking answers to help you discover yourself? 
+                                </p></div>
+                                    
+                                <hr> <br>
+                                <div class="flexParagraphs">
+                                    <p> If you are, you might just discover yourself in this tour. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ipsam vitae perspiciatis asperiores reiciendis placeat, esse, sunt ipsa sint, corrupti porro qui neque maiores commodi optio ea amet laborum iste? </p>
+                                        <br>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                       </div>
                   <br>
                   <a class="btn btn-full js--scroll-to-plans discover"  href="https://forms.gle/5cGeMF97GznshnF57" target="_blank" >Book</a>
                   
                   <br>
                 <hr>
+            </div>
+        
 </section>
 
-<section class="flex-container clearfix">
-		<div class="flex1 headingPic">
-        <img src="resources/img/aLake1.jpg" alt="Solitude at Saral lake, Neelum valley, Kashmir"class="adventurePic1">
-    </div>
-	<div class="travelHeadings">
-        <h1 id="heading1">Lahore To Hunza Valley Tour</div></h1><br>
+<section>
+        <div class="w3-content w3-display-container slider" id="div2">
+                <img class="mySlides" src="resources/img/WazirKhan.png" style="width:100%">
+                <img class="mySlides" src="resources/img/aLake.jpg" style="width:100%">
+                <img class="mySlides" src="resources/img/special.jpg" style="width:100%">
+                <img class="mySlides" src="resources/img/tPic2.jpg" style="width:100%">
+              
+                <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a>
+              </div>
+</section>
+
+<hr>
+<br>
+
+<section class="paragraphSection clearfix flex-container" id="aboutParagraph">
+
+
         <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Itinerary2')">Itinerary</button>
                 <button class="tablinks" onclick="openCity(event, 'Details2')">Details</button>
+                <button class="tablinks" onclick="openCity(event, 'Itinerary2')">Itinerary</button>
                 <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
               </div> <br>
               
-              <div id="Itinerary2" class="tabcontent">
+              <div id="Details2" class="tabcontent">
                 <div class="date listItems">
                         <ul class="headingP days">
                             <h1>Day 1</h1>
@@ -141,7 +208,7 @@
                     </ul>
                 </div>
               </div>
-              <div id="Details2" class="tabcontent">
+              <div id="Itinerary2" class="tabcontent">
                     <div class="date listItems">
                             <ul class="headingP days">
                                 <h1>Day 1</h1>
@@ -151,7 +218,7 @@
                     </div>
                   </div>
                   <br>
-                <hr>
+                <hr>     
 </section>
 
     
@@ -201,10 +268,12 @@
     
 
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="resources/js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- JavaScript -->
+<script src="js/script.js"> </script>
+<script src="js/script2.js"> </script>
+<script src="resources/js/script.js"></script>
+<script src="js/script3.js"> </script>
+
 		</body>	
 
 </html>
