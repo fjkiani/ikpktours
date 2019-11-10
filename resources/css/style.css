@@ -131,7 +131,7 @@
       text-align: center;
       /* letter-spacing: 5px; */
       text-transform: capitalize;
-      color: #0d4d19;
+      color: #006400	;
   }
   
   h3 {
@@ -401,7 +401,7 @@
 
   .headingText h2 {
       /* background-color: white; */
-      color: #0d4d19;
+      color: #006400	
       /* background: rgba(255,255,255,.2); */
       background-color: #0000;
       text-decoration: overline;
@@ -432,6 +432,10 @@
   .ready {
   font-family: 'Raleway', sans-serif;
   }
+
+.story {
+    margin-top: 50px;
+}
   
   
   
@@ -493,7 +497,7 @@
   
   
   .works-step div {
-      color: #b5b443;;
+      color: #b51f1f;;
       font-size: 50px;
       height: 54px;
       width: 54px;
@@ -508,7 +512,7 @@
   
   .section-steps {
       margin-top: 50px;
-      font-size: 30px;
+      font-size: 20px;
       /* font-family: raleway; */
   }
   
@@ -524,6 +528,10 @@
   .discoverPK {
       display: flex;
       justify-content: space-around;
+  }
+
+  .work h2 {
+      text-decoration: underline;
   }
   
   
@@ -598,7 +606,7 @@
   /* FOOTER */ 
   /* ----------------------------------------------- */
   footer {
-      background-color: #FFF6A9;
+      background-color: #f7faf8;
       padding: 50px;
       font-size: 80%;
       width: 100%;
@@ -720,12 +728,16 @@
   
   
   .heading h2 {
-      font-size: 130px;
-      padding: 50px;
-      background-color: #FFF6A9;
-      text-transform: capitalize;
-      margin-top: 150px;
-      font-family: 'Aladin', cursive;
+    font-size: 130px;
+    padding: 50px;
+    background-color: #ffffcc;
+    text-transform: capitalize;
+    margin-top: 180px;
+    font-family: 'Aladin', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 36px #0d4d19;
+    color: #0d4d19;
   }
   
   
@@ -830,7 +842,7 @@
       width: 100%;
       display: block;
       padding: 0px;
-      border: 6px solid #FAB400;
+      border: 2px solid #FAB400;
       margin-top: 0px;
   }
   
@@ -912,7 +924,7 @@
   }
 
   .aoc h1 {
-    background-color: yellow;
+    background-color: #ffffb3;
 }
 
 .heading2 h2 {
@@ -953,7 +965,7 @@
   
   /** ----------------------------------------------- */
   /* Upcoming Page */ 
-  
+  /* ----------------------------------------------- */
   
   .upcomingContent {
       width: 80%;
@@ -1001,20 +1013,61 @@
       margin-top: 0;
       font-size: 30px;
       width: 100%;
+      color:  #ff4d4d
+
+
+  }
+
+  .plansHeading h1 {
+    color:  #ff6666;
   }
 
   .listHeading {
       text-decoration: underline;
+      /* color: #b51f1f */
   }
+
+  /* .upcomingTrips h2 {
+      color: #008000;
+      background-color:#ffffcc;
+  } */
+
+  .upcomingTrips {
+      margin-top: 150px;
+  }
+
+  planList2 {
+    list-style-type:none
+    line-height: 50px;
+  }
+
+  .planList {
+    list-style: none;
+    color:red;
+}
+
+.upcomingParagraph {
+    padding: 0px 60px;
+
+}
+.buttonSetting {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.seeking h3{
+    color: #008080;
+}
+
+
+
   
   
   /** ----------------------------------------------- */
   /* Special Page */ 
   /* ----------------------------------------------- */
-  
-  /* .fahadPic {
-      margin-top: 150px;
-  } */
+
   
   
   .icon-big {
@@ -1038,6 +1091,11 @@
       margin-top: -5px;
   }
 
+  .specialHeading h2 {
+   background-color:  #ffffcc;;
+
+  }
+
    /* ----------------------------------------------- */
   /* Discover Page */ 
   /* ----------------------------------------------- */
@@ -1054,6 +1112,21 @@
       padding: none;
   }
 
+  /* ----------------------------------------------- */
+  /* City Page */ 
+  /* ----------------------------------------------- */
+
+  .cityHeading h2 {
+    box-shadow: 0 0px 50px #ea977b;
+    /* margin-top: 135px; */
+    padding: 0;
+    background-color: #f8dcd3;
+}
+
+ .cityTitle h2 {
+    color: #006400;
+    background-color:  #ffffcc;
+}
 
   
   /* ----------------------------------------------- */
@@ -1160,12 +1233,12 @@ a:not([href]):not([tabindex]) {
     border-style: solid;
   }
   
-  /* #arrow-left {
+  #arrow-left {
     border-width: 20px 30px 20px 0;
-    border-color: transparent #FFF6A9 transparent transparent;
+    border-color: transparent transparent transparent #FFF6A9;
     left: 0;
     margin-left: 0;
-  } */
+  }
   
   #arrow-right {
     border-width: 20px 0 20px 30px;
@@ -1334,7 +1407,10 @@ a:not([href]):not([tabindex]) {
       padding: 6px 12px;
       -webkit-animation: fadeEffect 1s;
       animation: fadeEffect 4s;
-      background-color: #FFF6A9;
+      background-color: #ffece6
+    }
+    #Itinerary {
+      width: 100%;
     }
     
     /* Fade in tabs */
@@ -1371,13 +1447,13 @@ a:not([href]):not([tabindex]) {
   .btn-full:link,
   .btn-full:visited,
   input[type=submit] {
-      background-color: #fff666;
-      border: 1px solid #e67e22;
-      color: #000000;
-      margin-right: 10px;
-      /* margin-top: 40px; */
-      letter-spacing: 2px;
-      text-transform: capitalize
+    background-color:  #ffffb3;
+    border: 1px solid #e67e22;
+    color: #0d4d19;
+    margin-right: 10px;
+    /* margin-top: 40px; */
+    letter-spacing: 2px;
+    text-transform: capitalize;
   }
   
   
@@ -1549,7 +1625,7 @@ a:not([href]):not([tabindex]) {
       
       
       h1 { font-size: 180%; }
-      h2 { font-size: 150%; }
+      h2 { font-size: 143%; }
       
       .long-copy {
           width: 100%;
@@ -1580,7 +1656,7 @@ a:not([href]):not([tabindex]) {
       /* section { padding: 2px 0; } */
       .contact-form {width: 100%; }
   /*    main page*/
-      .jumbotron {height: 55vh;
+      .jumbotron {height: 72vh;
         margin-top: 152px;
     }
       /* .this img {
@@ -1607,7 +1683,7 @@ a:not([href]):not([tabindex]) {
           display: none;
           letter-spacing: 3px; */
           font-size: 15px;
-          padding: 10px 10px;
+          /* padding: 10px 10px; */
       }
       .mobileContainer {margin-top: 10px;}
       .logo {height: 60px;}
@@ -1621,12 +1697,15 @@ a:not([href]):not([tabindex]) {
           letter-spacing: 2px;
       }
 
+
+
       .heading2 h2 {
           margin-top: 135px;
       }
 
       .heading3 h2 {
           margin-top: 0;
+          font-size: 45px;
       }
       .heading p {font-size: 25px; padding: 31px;}
       .aboutHeading{
@@ -1661,7 +1740,8 @@ a:not([href]):not([tabindex]) {
   
   
   /*special page*/
-      .headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 5px;}
+      .headingP{padding: 0; line-height: 35px; font-size: 115%; letter-spacing: 3px;}
+      .specialHeading h2 {font-size: 30px; }
       
    /* adventure page */ 
    .adventureHeading h2 {
@@ -1671,11 +1751,22 @@ a:not([href]):not([tabindex]) {
        margin-top: 180px;
    }
 
+   .adventureSection h2 {
+       font-size: 40px;
+       background-color: #ffffb3;
+
+   }
+
 
     /* city page */ 
     .citySection {
         margin-top: -70px;
     }
+
+    .cityHeading h2 {
+        margin-top: 135px;
+    }
+    
 
     /* upcoming page */ 
     .days {
@@ -1687,8 +1778,8 @@ a:not([href]):not([tabindex]) {
     }
 
     .upcomingHeading h1 {
-        font-size: 130%;
-        /* margin-top: -30px; */
+        font-size: 200%;
+        margin-top: -30px;
     }
     .travelDetails {
         padding: 90px;
@@ -1696,8 +1787,16 @@ a:not([href]):not([tabindex]) {
 
     .container-upcoming {
         margin-top: 0;
-
     }
+
+
+
+
+
+
+
+
+
   
 
  

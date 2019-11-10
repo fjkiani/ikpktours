@@ -23,33 +23,23 @@ $(document).ready(function() {
 					 });
 
 
-			//   hover effects 
-			$("h2").hover(function(){
-				$(this).css("background-color", "yellow");
-				}, function(){
-				$(this).css("color", "black");
+		// 	//   hover effects 
+		// 	$("h2").hover(function(){
+		// 		$(this).css("background-color", "yellow");
+		// 		}, function(){
+		// 		$(this).css("color", "black");
+		// });		
 
-
-		    // Animation on scroll using waypoint - > replaced with AOC
-			// $('.js--wp-1').waypoint(function(direction) {
-			// 	$('.js--wp-1').addClass('animated pulse');
-			// 	}, {
-			// 		offset: '50%'
-			// });	
-				
-		});		
-
-
-
-		
-	
+			
 	});
 
+				///loader
+				$(window).on("load",function(){
+					$(".loader-wrapper").fadeOut("slow");
+				});
+			
 
-	///loader
-	$(window).on("load",function(){
-		$(".loader-wrapper").fadeOut("slow");
-	});
+
 
 
 	
