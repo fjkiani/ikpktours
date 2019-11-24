@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	 <!-- W3 Slideshow -->
+	 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+	 <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
+	 <link rel ="stylesheet" type="text/css" href="resources/css/style.css">
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
@@ -24,7 +28,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<!-- Icons -->
-	<!-- 	 <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css"> -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.css">
 	<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 	<title>IK Pakistan Tours</title>
 </head>
@@ -124,166 +128,25 @@
 
 	</section>
 
-	<!-- carousel -->
-	<section class="slideshow">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<div class="container-2">
-				<div class="discoverPakistan">
-					<h1>this is Pakistan</h1>
+	
+	
+<!-- Slideshow -->
+<section>
+		<div><li class="thisPak" data-aos="fade-right" id="this"><img src="resources/img/thisPak.jpg"></li></div>
+        <div class="w3-content w3-display-container slider data-aos" data-aos="fade-in" id="div1">
+                <img class="mySlides fade2" src="resources/img/shangrilaLake.jpg" style="width:100%">
+                <img class="mySlides fade2" src="resources/img/special.jpg" style="width:100%">
+                <img class="mySlides fade2" src="resources/img/aLake.jpg" style="width:100%">
+                <img class="mySlides fade2" src="resources/img/tPic2.png" style="width:100%">
+              
+                <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a>
+			  </div>
+			  <div class="headingP">
+					<a class="btn btn-full js--scroll-to-plans discover" href="upcoming.html">View Upcoming trips</a>
 				</div>
-				<div id="myCarousel " class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
+</section>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="resources/img/gilgit.jpg" alt="Gilgit Baltisan Valley" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Gilgit Baltisan Valley</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/cPic6.jpg" alt="Hiran Minar in Sheikhupura Pakistan"
-								style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Hiran Minar</h3>
-								<p>City Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/c_8.5.jpg" alt="Attabad Lake Hunza Valley Pakistan"
-								style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Attabad Lake Hunza Valley</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/c_3.5.jpg" alt="New york" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Cherry Blossom Season</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/c_4.5.jpg" alt="Karakoram Mountains in Pakistan"
-								style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Karakoram Mountains</h3>
-								<p>adventure Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/k2.jpg" alt="K2 Mountain in Pakistan" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>K2 Mountain</h3>
-								<p>adventure Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/aLake.jpg" alt="New york" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Attabad Lake Hunza Valley</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/5.5.jpg" alt="Chicago" style="width:100%;">
-							<div class="carousel-caption">
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/6.5.jpg" alt="Badshahi mosque lahore" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Badshahi mosque lahore</h3>
-								<p>city tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/truck.jpg" alt="Karakoram Highway in pakistan" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Karakoram Highway</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/deosai.jpg" alt="Deosai National Park in Skardu Pakistan"
-								style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Deosai National Park</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<!-- <div class="item">
-										<img src="resources/img/deosai2.jpg" alt="Deosai National Park in Skardu Pakistan" style="width:100%;">
-										<div class="carousel-caption">
-														
-											</div>
-										</div> -->
-
-						<div class="item">
-							<img src="resources/img/desosaiPic.jpeg" alt="Chicago" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Deosai National Park</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/eightWonder.jpg" alt="Chicago" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Eight wonder of the world, the karakoram highway</h3>
-								<p>Northern Special Tours</p>
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="resources/img/c_6.5.jpg" alt="Pakistan Flag" style="width:100%;">
-							<div class="carousel-caption">
-								<h3>Pakistan Zindabad</h3>
-							</div>
-						</div>
-
-
-
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
-					<hr>
-				</div>
-			</div>
-			<div class="headingP">
-				<a class="btn btn-full js--scroll-to-plans discover" href="upcoming.html">View Upcoming trips</a>
-			</div>
-		</div>
-
-
-	</section>
 
 
 
@@ -291,53 +154,37 @@
 
 	<!-- Footer Section -->
 
-
 	<footer>
-		<div class="container">
-			<div class="col span-1-of-2">
-				<div ul class="footer-nav">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">Our Story</a></li>
-					<li><a href="upcoming.html">Upcoming Tours</a></li>
-					<li><a href="discover.html">Discover Pakistan</a></li>
-					<ion-icon name="logo-bitcoin"></ion-icon>
-					<br>
+			<div class="container">
+				<div class="col span-1-of-2">
+					<div ul class="footer-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="upcoming.html">Upcoming Tours</a></li>
+						<li><a href="https://en.calameo.com/read/00506399598e6048f2c5b"target="_blank">Press</a></li>
+						<ion-icon name="logo-bitcoin"></ion-icon>
+						<br>
 					</ul>
 					<ul class="social-links">
 						<ion-icon name="logo-bitcoin"></ion-icon>
 						<li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+						<!-- WhatsApp -->
+						<div class="elfsight-app-983605cf-92fa-489e-93ae-8f7fee75c3b1"></div>
 						<li><a href="#"><i class="ion-logo-youtube"></i></a></li>
 						<li><a href="#"><i class="ion-logo-facebook"></i></a></li>
-					</ul>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="footer-bottom">
-			<div class="logo-bottom"><img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo"
-					class="logo"></a>
-				<br>
-			</div>
-			<div class="contactDetails">
-				<h4>IK pakistan tours & travels <br> Islamabad (HQ)
-					<br> New York City
-					<hr> <br>
-					<div class="phoneEmail"><span>Contact<br>
-							<a href="#">+923005103185</a> (Pakistan)
-							<br> <a href="#">+13476842656</a> (USA)
-							<br> <a href="#">info@ikpktours.com</a>
-						</span>
-
+			<hr><br>
+			<div class="footer-bottom">
+					<div class="logo-bottom"><img src="resources/img/tranLogo.png" alt="IK Pakistan Tours Logo" class="logo"></a>
+						<br>			
 					</div>
-
-
-				</h4>
+					<div class="joyTech">
+							<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
+					</div>
 			</div>
-			<div class="joyTech">
-				<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a
-						href="#">Designed & Powered By JoyTech</a></p>
-			</div>
-		</div>
-	</footer>
+		</footer>
 
 
 
@@ -373,6 +220,11 @@
 			duration: 1200,
 		});
 	</script>
+	      <!-- JavaScript -->
+		  <script src="js/script.js"> </script>
+		  <script src="js/script2.js"> </script>
+		  <script src="resources/js/script.js"></script>
+		  <script src="js/script3.js"> </script>
 </body>
 
 </html>

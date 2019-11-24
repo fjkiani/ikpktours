@@ -707,9 +707,10 @@
   
   
   footer p {
-      color: #888;
-      text-align: center;
-      margin-top: 20px;
+    color: #0d4d19;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
   }
   
   
@@ -1019,12 +1020,13 @@
   }
 
   .plansHeading h1 {
-    color:  #ff6666;
+    color:  #0d4d19;
   }
 
   .listHeading {
       text-decoration: underline;
-      /* color: #b51f1f */
+      color:  #669900
+
   }
 
   /* .upcomingTrips h2 {
@@ -1043,7 +1045,8 @@
 
   .planList {
     list-style: none;
-    color:red;
+    color: #669900
+
 }
 
 .upcomingParagraph {
@@ -1057,7 +1060,8 @@
 }
 
 .seeking h3{
-    color: #008080;
+    color:  #669900;
+
 }
 
 
@@ -1128,7 +1132,8 @@
     background-color:  #ffffcc;
 }
 
-  
+
+
   /* ----------------------------------------------- */
   /* W3 SLIDESHOW */ 
   /* ----------------------------------------------- */
@@ -1144,7 +1149,7 @@ a:not([href]):not([tabindex]) {
 }
  
   /* Fading animation */
-  .fade {
+  .fade2 {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.5s;
     animation-name: fade;
@@ -1163,6 +1168,27 @@ a:not([href]):not([tabindex]) {
 
     /* .mySlides {display:none;} */
 
+    /* .fade:not(.show) {
+    opacity: 0; */
+
+    .w3-color {
+        color: red!important;
+        background-color: white !important
+    }
+
+    .w3-padding-16 {
+        padding-top: 0px!important;
+         padding-bottom: 0px!important;
+    }
+
+    .w3-display-bottomleft {
+        text-align: center;
+        position: relative;
+    }
+
+    .w3-large {
+     font-size: 30px!important;
+    }
 
   /* ----------------------------------------------- */
   /* JAVASCRIPT SLIDESHOW */ 
@@ -1254,65 +1280,14 @@ a:not([href]):not([tabindex]) {
 
 .mySlides {display:none;}
   
-  
-  /* ----------------------------------------------- */
-  /* Animations */
-  /* ----------------------------------------------- */
-  
-  .js--wp-1, .js--wp-5, .js--wp-4  {
-      -webkit-animation-duration: 1s;
-         animation-duration: 1s;
-     }
-     
-     .js--wp-2, .js--wp-3, .js--wp-5, .js--wp-6, .js--wp-7, .js--wp-8,  .js--wp-9, .js--wp-10, .js--wp-11, .js--wp-12 {
-      opacity: 0;
-      -webkit-animation-duration: 1s;
-       animation-duration: 1s;
-     }
-     
-     /* .js--wp-1.animated {
-       opacity: 1;
-     } */
-     
-     .js--wp-1.animated .js--wp-2.animated, .js--wp-2.animated, .js--wp-4 {
-       opacity: 1;
-     }
-  
-  /* .js--wp-1,
-  .js--wp-2,
-  .js--wp-3
-  {
-      opacity: 0;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-  }
-  
-  .js--wp-4 {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-  }
-  
-  .js--wp-1.animated,
-  .js--wp-2.animated,
-  .js--wp-3.animated {
-      opacity: 1;
-  }  */
-  
-/*   
-  .box {
-      width: 400px;
-      height: 100px;
-      margin: 100px auto;
-      padding-top: 50px;
-      background: 
-  } */
+
 
 
   /* ----------------------------------------------- */
   /* CSS CAROUSEL SLIDESHOW */ 
   /* ----------------------------------------------- */
   
-  /* @-webkit-keyframes zoom {
+  @-webkit-keyframes zoom {
     from {
       -webkit-transform: scale(1, 1);
     }
@@ -1328,7 +1303,7 @@ a:not([href]):not([tabindex]) {
     to {
       transform: scale(1.5, 1.5);
     }
-  }  */
+  } 
   
   .carousel-inner .item > img {
     -webkit-animation: zoom 50s;
@@ -1356,6 +1331,94 @@ a:not([href]):not([tabindex]) {
   }
 
   
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    /* display: none; */
+    opacity: 1;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 
 
@@ -1407,7 +1470,7 @@ a:not([href]):not([tabindex]) {
       padding: 6px 12px;
       -webkit-animation: fadeEffect 1s;
       animation: fadeEffect 4s;
-      background-color: #ffece6
+      /* background-color: #ffece6; */
     }
     #Itinerary {
       width: 100%;
