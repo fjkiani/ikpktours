@@ -62,7 +62,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FFF6A9;
+    background-color:     #47d147;
+
+
+
+    ;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -335,7 +339,8 @@
       background-color: red;
       transition: all 0.3s ease;
   }
-  
+
+
   
   
   
@@ -346,7 +351,7 @@
   .jumbotron {
       background: url('../img/special.jpg') no-repeat;
       background-size: cover;
-      height: 85vh;
+      height: 110vh;
       background-position: center;
       border-radius: 0;
       margin-top: 150px;
@@ -599,14 +604,11 @@
   
   
   
-  
-  
-  
   /* ----------------------------------------------- */
   /* FOOTER */ 
   /* ----------------------------------------------- */
   footer {
-      background-color: #f7faf8;
+      background-color: white;
       padding: 50px;
       font-size: 80%;
       width: 100%;
@@ -1130,6 +1132,31 @@
  .cityTitle h2 {
     color: #006400;
     background-color:  #ffffcc;
+}
+
+.headingTest {
+    position: relative;
+    width: 100%;
+}
+
+.text-wrapper h1 {
+    font-size: 50px;
+    position: absolute;
+    top:55%;
+    text-align: center;
+    width: 100%;
+    font-size: 75px;
+    color: #0d4d19;
+    background-color: #dff0da;
+}
+
+.content-wrapper {
+    text-align: center;
+
+}
+
+.cityPicture {
+    margin-top: 175px;
 }
 
 
@@ -1828,6 +1855,11 @@ a:not([href]):not([tabindex]) {
 
     .cityHeading h2 {
         margin-top: 135px;
+    }
+
+    .text-wrapper h1 {
+        top:70%;
+        font-size: 30px;
     }
     
 
