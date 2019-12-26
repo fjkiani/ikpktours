@@ -62,7 +62,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color:     #47d147;
+    background-color:  #18ad48;
 
 
 
@@ -174,7 +174,7 @@
   
   /*logo*/
   .logo {
-      height: 80px;
+      height: 125px;
       width: auto;
       float: right;
      /* margin-left: -15px;*/
@@ -354,7 +354,7 @@
       height: 110vh;
       background-position: center;
       border-radius: 0;
-      margin-top: 150px;
+      margin-top: 135px;
       box-shadow: 0 0 10px 3px white inset;
       /* height: 50%;
       background-position: center;
@@ -394,9 +394,10 @@
   
   .discoverHeading h1 {
       font-family: 'aladin';
-      font-size: 145px;
+      font-size: 110px;
       color: #0d4d19;
       background-color: #dff0da;
+      margin-top: 0;
       /* background: rgba(255,255,255,.2); */
     }
 
@@ -441,7 +442,7 @@
 .story {
     margin-top: 50px;
 }
-  
+
   
   
   
@@ -527,7 +528,7 @@
   
   .thisPak {
       display: flex;
-      justify-content: space-around 
+      justify-content: space-around; 
   }
   
   .discoverPK {
@@ -608,7 +609,7 @@
   /* FOOTER */ 
   /* ----------------------------------------------- */
   footer {
-      background-color: white;
+      background-color: #EBFFCC;
       padding: 50px;
       font-size: 80%;
       width: 100%;
@@ -626,9 +627,10 @@
   }
   
   .contactDetails h4 {
-      text-transform: capitalize;
-      font-size: 15px;
-      letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 0px;
   }
   
   .footer-bottom {
@@ -714,6 +716,12 @@
     margin-top: 20px;
     font-size: 15px;
   }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    color: #0d4d19;
+  }
   
   
   
@@ -733,7 +741,7 @@
   .heading h2 {
     font-size: 130px;
     padding: 50px;
-    background-color: #ffffcc;
+    background-color: #ffffb3;
     text-transform: capitalize;
     margin-top: 180px;
     font-family: 'Aladin', cursive;
@@ -800,18 +808,30 @@
       margin-top: 30px;
   }
   
-  
+  .visionHeading {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .thisPak2 {
+    margin-top: -115px;
+  }
+
+  .valleys h3 {
+    color: #006400;
+  } 
+
+
   
   /** ----------------------------------------------- */
   /* FLEX Properties  */ 
   /* ----------------------------------------------- */
   
   .flexParagraphs {
-      
-      margin: 21px 0px 0px 0px;
+      margin: 20px 0px 0px 0px;
       /* font-family: raleway; */
       align-content: center;
-      letter-spacing: 0.5px;
+      letter-spacing: 1.5px;
       text-transform: capitalize;
       font-size: 16px;
       line-height: 30px;
@@ -980,6 +1000,7 @@
       /* display: flex;
       justify-content: space-around */
       line-height: 50px;
+      margin-top: -50px;
   }
   
   .ul {
@@ -1013,7 +1034,7 @@
   
 
   .plansDetails {
-      margin-top: 0;
+      margin-top: -60px;
       font-size: 30px;
       width: 100%;
       color:  #ff4d4d
@@ -1023,6 +1044,7 @@
 
   .plansHeading h1 {
     color:  #0d4d19;
+    font-size: 130%;
   }
 
   .listHeading {
@@ -1066,6 +1088,16 @@
 
 }
 
+.tablinks a {
+    color:black;
+}
+
+.testDetails {
+    margin-top: -65px;
+}
+.planList p {
+ padding: 20px 200px 0 200px;
+}
 
 
   
@@ -1106,7 +1138,7 @@
   /* Discover Page */ 
   /* ----------------------------------------------- */
   .discoverPakistan {
-      margin-top: 7em;
+      margin-top: 50px;
   }
 
 
@@ -1217,6 +1249,7 @@ a:not([href]):not([tabindex]) {
      font-size: 30px!important;
     }
 
+    
   /* ----------------------------------------------- */
   /* JAVASCRIPT SLIDESHOW */ 
   /* ----------------------------------------------- */
@@ -1464,9 +1497,9 @@ a:not([href]):not([tabindex]) {
   
   /* Style the tab */
   .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
+    overflow: hidden;
+    border: 6px solid wheat;
+    background-color: #ffffb3;
     }
     
     /* Style the buttons inside the tab */
@@ -1572,6 +1605,27 @@ a:not([href]):not([tabindex]) {
       color: #fff;
   }
   
+
+  .btn2 {
+    /* display: none; */
+    bottom: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  
+/* 
+  #myBtn:hover {
+    background-color: yellow;
+  } */
+
 
   
   /* ----------------------------------------------- */
@@ -1882,6 +1936,10 @@ a:not([href]):not([tabindex]) {
 
     .container-upcoming {
         margin-top: 0;
+    }
+
+    .planList p {
+        padding: 20px 30px 0 20px;
     }
 
 
