@@ -797,6 +797,7 @@
       font-size: 50px;
       letter-spacing: 0px;
       text-transform: capitalize;
+      color: #006400;
   }
   
   .discoverPakistan {
@@ -814,7 +815,7 @@
   }
 
   .thisPak2 {
-    margin-top: -115px;
+    margin-top: -100px;
   }
 
   .valleys h3 {
