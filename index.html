@@ -10,8 +10,8 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		 <meta name="viewport" content="width=device-width, initial-scale=1">
-		  <!-- W3 Slideshow -->
-		 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+		 <!-- W3 Slideshow -->
+		 <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
 		<link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
     	 <!-- Bootstrap -->
     	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -23,16 +23,8 @@
 		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/ikpktours/blob/master/resources/css/style.css">
 		<link rel ="stylesheet" type="text/css" href="resources/css/style.css">
-		<!-- Javascript file -->
-		<script src="js/script2.js"></script>
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!-- Javascript -->
 		<script src="js/script.js"> </script>
-		<!-- j-query  -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 		<!--AOS -->	
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 		<!--Fonts -->
@@ -52,7 +44,7 @@
 								<img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
 							</div></a>
 							<ul class="nav-links">
-								<li><a href="about.html">Our Story</a>
+								<li><a class="js--scroll-to-tours" href="upcoming.html">Upcoming </a>
 									<!-- <ul>
 										<li><a href="#">Adventure </a></li>
 										<li><a href="#">Historic</a></li>
@@ -61,8 +53,8 @@
 									</ul> -->
 								</li>
 							</div>
-								<li><a href="gallery.html" target="_blank">Gallery</a>
-								<li><a href="index.html#tours"> Tours</a></li>
+							<li><a class="js--scroll-to-tours" href="index.html#tours">Tours</a>
+								<li><a href="about.html">Our Story</a></li>
 									<!-- <ul>
 										<li><a href="#">Pakistan </a></li>
 										<li><a href="#">Gallery </a></li>
@@ -105,7 +97,7 @@
 		<br>
 	</section>	
 
-				<!--  ends -->
+	
 
 <!---------- About Us Section ---------------->
 <section class="section-about js--section-about clearfix">
@@ -117,7 +109,7 @@
 			 </p> 
 			<br>
 		</div>
-		<div class= "headingText" data-aos="fade-down">
+		<div class= "headingText" data-aos="fade-in">
 			<h2>We Make Your visit in Pakistan Memorable </h2><br>
 		<a class="btn btn-full js--scroll-to-start discover" href="#works">Learn More</a>
 		<hr>
@@ -127,12 +119,14 @@
 		</div>
 </section>
 
+<!-- slideshow -->
+
 	<section class="section-pictures slideshow js--section-features" id="plans">
 			<div class="w3-content w3-display-container slider data-aos" data-aos="fade-in" id="div1">
-					<img class="mySlides fade2" src="resources/img2/m6.jpg" alt="group at gilgit airport Pakistan" style="width:100%">
-					<img class="mySlides fade2" src="resources/img2/m7.jpg" alt="Selfie at Attobad lake Pakistan" style="width:100%">
-					<img class="mySlides fade2" src="resources/img2/m5.jpg" alt="talking to kids selling fruit on Karakoram highway" style="width:100%">
-					<img class="mySlides fade2" src="resources/img2/g6.jpg" alt="group posing in front of Darbar hotel Hunza Valley" style="width:100%">
+					<img class="mySlides fade2 photo1" data-src="resources/img2/m6.jpg" alt="group at gilgit airport Pakistan" style="width:100%">
+					<img class="mySlides fade2 " src="resources/img2/m7.jpg" alt="Selfie at attabad lake Pakistan" style="width:100%">
+					<img class="mySlides fade2 " src="resources/img2/m5.jpg" alt="talking to kids selling fruit on Karakoram highway" style="width:100%">
+					<img class="mySlides fade2" src="resources/img2/group25.jpg" alt="group posing in front of gilgit airport" style="width:100%">
 					<img class="mySlides fade2" src="resources/img/groupPic1.png" alt="group posing in front of fairy meadows mountain" style="width:100%">
 				  
 					<a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
@@ -147,7 +141,7 @@
 
 <section class="section-steps clearfix">
 		<!-- insert second animation effect  -->
-		<div class="work" data-aos="fade-left">
+		<div class="work" data-aos="fade-in">
 			<h2>How we work &mdash; Simple as 1, 2, 3</h2>
 			
 				<div class="col span-1-of-2 steps-box" id="works">
@@ -169,7 +163,7 @@
 		</div>
 	</section>
 
-
+<!-- heading -->
 
 	 <section class="facts clearfix" id="discover">
 			<div class="heading heading3" data-aos="fade-in">
@@ -178,7 +172,7 @@
 				</div>
 					<div class ="introHeading" data-aos="fade-in">
 						<ul class="headingP"><h1>Home to highest mountains on planet</h1>
-							<div class="aos" data-aos="fade-left">
+							<div class="aos" data-aos="fade-in">
 							<li> 'Eighth wonder of the world'</li>
 							<li>ruled by the Mughal and British Empire</li>
 							<li> Referred to as 'Heaven on earth' </li>
@@ -215,7 +209,7 @@
                 </li>
                 <li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/showPic6.jpg" alt="Posing on Karakoram Highway" >
+                        <img class ="photo1" data-src="resources/img/showPic6.jpg" alt="Posing on Karakoram Highway northern pakistan" >
                     </figure>
                 </li>
                 <li class = "crop">
@@ -230,7 +224,7 @@
                 </li>
                 <li class = "crop">
                     <figure  class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/showPic13.jpg" alt="Hand Picked Cherries">
+                        <img class ="photo1" data-src="resources/img/showPic13.jpg" alt="Hand Picked Cherries from hunza valley northern pakistan">
                     </figure>
                 </li>
                 <li class = "crop">
@@ -245,17 +239,17 @@
 				</li>
 				<li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/showPic8.jpg" alt ="Old Silk Road">
+                        <img class ="photo1" data-src="resources/img/showPic8.jpg" alt ="Old Silk Road sign on karakoram highway northern pakistan">
                     </figure>
 				</li>
 				<li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/showPic9.jpg" alt ="Himalayan Mountains">
+                        <img class ="photo1" data-src="resources/img/showPic9.jpg" alt ="ultar mountain hunza valley northern pakistan">
                     </figure>
 				</li>
 				<li class = "crop">
                     <figure class="pak-photo">
-                        <img class ="photo1" data-src="resources/img/showPic14.jpg" alt ="Man Playing Rebab">
+                        <img class ="photo1" data-src="resources/img/showPic14.jpg" alt ="Man Playing Rubab in Hunza valley northern pakistan gilgit-baltistan">
                     </figure>
                 </li>
             </ul>
@@ -268,8 +262,8 @@
 
 <!-- Packages Section  -->
 
-	<section class="section-packages clearfix js--section-packages"> 
-		<div><li class="thisPak" data-aos="fade-left" id="this"><img src="resources/img/thisPak.jpg"></li></div>
+	<section class="section-packages clearfix js--section-tours"> 
+		<div><li class="thisPak" data-aos="fade-left" id="this"><img class="photo1" data-src="resources/img/thisPak.jpg"></li></div>
 		<a href="tours"><div id="tours">
 		</div>
 	</a>
@@ -277,14 +271,14 @@
 			<div class="col span-1-of-3">
 				<div class="plan-box">
 				<div class="adventure"> 
-						<a href="adventure.html" alt="Adventure tours in Mountain ranges in Pakistan"><h3 id="adventure">Adventurous </h3>
+						<a href="adventure.html" alt="Adventure tours in Mountain ranges in Northern Gilgit-Baltistan Pakistan"><h3 id="adventure">Adventurous </h3>
 						</a></div>
 					</div>
 				</div>	
 				<div class="col span-1-of-3">
 				<div class="plan-box">	
 					<div class="city">
-						<a href="city.html" alt="City tours in Pakistan"><h3 id="city">Historic</h3>
+						<a href="city.html" alt="City tours in Lahore, Islamabad Pakistan"><h3 id="city">Historic</h3>
 
 					</a></div>
 				</div>
@@ -292,7 +286,7 @@
 				<div class="col span-1-of-3">	
 					<div class="plan-box">
 					<div class="special">
-						<a href="special.html" alt="special northern tours of Pakistan" ><h3 id="special">Special</h3>
+						<a href="special.html" alt="special northern tours of Northern Pakistan in Gilgit-Baltistan Pakistan" ><h3 id="special">Special</h3>
 
 						</a></div>
 					</div>
@@ -320,17 +314,19 @@
 		<div class="container">
 			<div class="col span-1-of-2">
 				<div ul class="footer-nav">
-					<!-- <li><a href="about.html">Our Story</a></li> -->
+						<div class="logo-bottom"><img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+							<br>			
+						</div>
 					<li><a href="upcoming.html">Upcoming Tours</a></li>
 					<li><a href="discover.html">Discover Pakistan</a></li>
-					<li><a href="gallery.html" target="_blank">Gallery</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="https://drive.google.com/file/d/1WiHxoSs7tXocj21iAWl7cdzo-KaSIF6L/view?usp=sharing"target="_blank">Press</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<ul class="social-links">
 					<li><a href="https://instagram.com/ikpakistantours" target="_blank"><i class="ion-logo-instagram"></i></a></li>
 					<!-- WhatsApp -->
-					<div class="elfsight-app-983605cf-92fa-489e-93ae-8f7fee75c3b1"></div>
+					<!-- <div class="elfsight-app-983605cf-92fa-489e-93ae-8f7fee75c3b1"></div> -->
 					<li><a href="#"><i class="ion-logo-youtube"></i></a></li>
 					<li><a href="https://tinyurl.com/yx3f6ga3" target="_blank"><i class="ion-logo-facebook"></i></a></li>
 					</ul>
@@ -339,40 +335,49 @@
 		</div>
 		<hr><br>
 		<div class="footer-bottom" id="contact">
-				<div class="logo-bottom"><img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+				<!-- <div class="logo-bottom"><img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
 					<br>			
-				</div>
+				</div> -->
 				<div class="joyTech">
 					<div class="contactDetails">
 						<ul class="social-links">
 						<div class="details">
 							<li><a href="tel:+92512226251"><i><ion-icon name="call"></ion-icon><h4>Phone: +92-51-2226251</h4></i></a></li>
 							<li><a href="mailto: Contact@IKPakistanTours.com"><i><ion-icon name="at"></ion-icon><h4>Email: Contact@IKPakistanTours.com</h4></i></a></li>
-							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Locations: Islamabad | Kaula Lumpur | New York City</h4></i></a></li>
-							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Address: Al-Rehman Plaza, Main G.T Road Near Ternol Phathak, Islamabad (HQ)</h4></i></a></li>
+							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Locations: Islamabad (HQ) | Kaula Lumpur | New York City</h4></i></a></li>
+							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Address: Office # 3 Lower Ground, Zia Arcade, Spring North,Phase 7 Bahria Town, Pakistan 46000</h4></i></a></li>
 						</div>
 						</ul>
 					</div>
-						<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
+						<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. <br> Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
 				</div>
 		</div>
 	</footer>
+	<!-- footer ends		 -->
 
 
+	<!-- script tags -->
 			<!-- //lazy loading -->	
-				<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
-				<script> const myLazyLoad = new LazyLoad ({
-					elements_selector: ".photo1" 
+			<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+			<script> const myLazyLoad = new LazyLoad ({
+			elements_selector: ".photo1" 
 			});
 			</script>
 			<!-- jQuery (Bootstrap JS plugins depend on it) -->
+			<!-- j-query  -->
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 			<!-- <script src="resources/js/script2.js"></script> -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-				<!-- JavaScript -->
-				<script src="js/script.js"> </script>
-				<script src="js/script2.js"> </script>
-				<script src="js/script3.js"> </script>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<!-- JavaScript -->
+			<!-- <script src="js/script.js"> </script> -->
+			<script src="js/script2.js"> </script>
+			<script src="js/script3.js"> </script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 			<!--   Bootstrap -->
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 			<script src="vendors/js/jquery.waypoints.min.js"></script>
@@ -383,9 +388,5 @@
 				duration: 1200,
 			});
 			</script>
-			<!-- icons
-			<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
-			<!-- WhatsApp -->
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
 				</body>	
 			</html>

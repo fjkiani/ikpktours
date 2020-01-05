@@ -11,7 +11,7 @@
                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
                  <meta name="viewport" content="width=device-width, initial-scale=1">
                   <!-- W3 Slideshow -->
-                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+                 <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
                 <link href="http://www.w3schools.com/lib/w3.css" rel="stylesheet"/>
                  <!-- Bootstrap -->
                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -52,11 +52,11 @@
 								<img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
 							</div></a>
 							<ul class="nav-links">
-								<li><a href="index.html#tours">Our Tours</a>
+								<li><a href="index.html">Home</a>
 								</li>
-								<li><a href="discover.html">Discover Pakistan </a>
+								<li><a href="discover.html">Discover </a>
 								</li>
-								<li><a href="about.html">Our Story</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
 							</ul>
 							<div class="burger">
 								<div class="line1"></div>
@@ -67,7 +67,12 @@
 							</nav>
 					</header>
             <!-- End header  -->
-            
+
+            <!-- Loader  -->
+			<div class="loader-wrapper">
+                <span class="loader"><span class="loader-inner"></span></span>
+              </div>
+
 
 
 	<!-- Main Heading Section -->
@@ -90,9 +95,9 @@
         <div class="w3-content w3-display-container slider data-aos" data-aos="fade-in" id="div1">
             <div class="adventures" id="adventures">
             </div>
-                <img class="mySlides fade2" src="resources/img/groupPic1.png" alt="fairy meadows national park in gilgit-baltistan pakistan " style="width:100%">
+                <img class="mySlides fade2 photo1" data-src="resources/img/groupPic1.jpeg" alt="fairy meadows national park in gilgit-baltistan pakistan " style="width:100%">
                 <img class="mySlides fade2" src="resources/img/sk4.jpg" alt="shangrila lake in Lower Kachura Lake skardu gilgit baltistan pakistan" style="width:100%">
-                <img class="mySlides fade2" src="resources/img/tPic1.jpg" alt="ultar mountain in hunza valley gilgit-baltistan pakistan" style="width:100%">
+                <img class="mySlides fade2" src="resources/img/tPic1.5.jpg" alt="ultar mountain in hunza valley gilgit-baltistan pakistan" style="width:100%">
                 <img class="mySlides fade2" src="resources/img/sk3.jpeg" alt="Suspension Bridge in Skardu Gilgit Baltistan pakistan" style="width:100%">
                 
               
@@ -104,12 +109,12 @@
 <section class="flex-container container-upcoming clearfix js--section-plans" id="">
           
 	<div class="upcomingHeading headingP data-aos" data-aos="fade-in">
-        <h1 id="headingP">Land of the giants to the valleys, serenity tour</h1><br>
+        <h1 id="headingP">Land of The giants, serenity tour</h1><br>
         <div class="date data-aos" data-aos="fade-in"><br>
             <h2>Skardu, Gilgit And Hunza Valley </h2>
-            <h3>10 Days Land & Air</h3>
+            <h3>12 Days </h3>
             <div class="skarduHunzaDate" id="date1">
-                    <h4>October 11-20</h4>  </div>
+                    <h4>Season: June - October</h4>  </div>
             <p>$1699</p>   
         </div>
     </div>
@@ -141,8 +146,8 @@
                                     <li><p>tips to local natives assisting you</p></li>
                                     <li><p>decisions made outside of group</p></li>  
                                     <li><p>personal shopping</p></li>
-                                    <div class= "btn btn-full btn2">
-                                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                    <div class= "btn btn-full js--scroll-to-start discover">
+                                        <button onclick="topFunction()" id="myBtn2" title="Go to top">Top</button>
                                             </div>
                                     </ul>
                                 </ul>
@@ -465,11 +470,9 @@
 
 <section>
         <div class="w3-content w3-display-container slider data-aos" data-aos="fade-in" id="div3">
-                <img class="mySlides fade2" src="resources/img2/m14.jpg" style="width:100%">
-                <img class="mySlides fade2" src="resources/img2/m5.jpg" style="width:100%">
-                <img class="mySlides fade2" src="resources/img2/m9.jpg" style="width:100%">
-                <img class="mySlides fade2" src="resources/img2/g5.jpg" style="width:100%">
-              
+                <img class="mySlides fade2 photo1" data-src="resources/img/tPic3.5.jpg" alt=" Mountains in gilgit-baltistan Pakistan" style="width:100%">
+                <img class="mySlides fade2" src="resources/img/special.jpg" alt="Hunza valley, Attabad Lake in Gilgit-Baltistan " style="width:100%">
+                <img class="mySlides fade2" src="resources/img2/m10.5.jpg" alt="ultar mountain in hunza valley gilgit-baltistan pakistan" style="width:100%">
                 <a class="w3-btn-floating w3-display-left" onclick="plusDivs(this,-1)">&#10094;</a>
                 <a class="w3-btn-floating w3-display-right" onclick="plusDivs(this,1)">&#10095;</a>
               </div>
@@ -484,7 +487,8 @@
                     <h2>Islamabad, Hunza Valley and Gilgit Baltistan</h2> 
                     <h3>8 Days Land & Air </h3>
                     <div class="hunzaDate">
-                    <h4>October 11-20 </h4>
+                    <h4>Season: June - October
+                    </h4>
                 </div>
                 <p>$1499</p>
                 </div>
@@ -519,8 +523,8 @@
                                     <li><p>tips to local natives assisting you</p></li>
                                     <li><p>decisions made outside of group</p></li>  
                                     <li><p>personal shopping</p></li>
-                                    <div class= "btn btn-full btn2">
-                                            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                    <div class= "btn btn-full js--scroll-to-start discover">
+                                            <button onclick="topFunction3()" id="myBtn2" title="Go to top">Top</button>
                                             </div>
                                     </ul>
                                 </ul>
@@ -632,12 +636,15 @@
 <footer>
 		<div class="container">
 			<div class="col span-1-of-2">
+                	<div class="logo-bottom"><img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
+                        <br>			
+                    </div>
 				<div ul class="footer-nav">
-					<li><a href="about.html">Our Story</a></li>
-					<li><a href="upcoming.html">Upcoming Tours</a></li>
-					<li><a href="gallery.html" target="_blank">Gallery</a></li>
-					<!-- <li><a href="discover.html">Discover Pakistan</a></li> -->
-					<li><a href="https://drive.google.com/file/d/1WiHxoSs7tXocj21iAWl7cdzo-KaSIF6L/view?usp=sharing"target="_blank">Press</a></li>
+                    	<li><a href="index.html">Home </a></li>
+									<li><a href="discover.html">Discover Pakistan</a></li>
+									<li><a href="gallery.html" target="_blank">Gallery</a></li>
+									<li><a href="https://drive.google.com/file/d/1WiHxoSs7tXocj21iAWl7cdzo-KaSIF6L/view?usp=sharing"target="_blank">Press</a></li>
+									<li><a href="#contact">Contact</a></li>
 				</ul>
 				<ul class="social-links">
 					<li><a href="https://instagram.com/ikpakistantours" target="_blank"><i class="ion-logo-instagram"></i></a></li>
@@ -651,9 +658,6 @@
 		</div>
 		<hr><br>
 		<div class="footer-bottom" id="contact">
-				<div class="logo-bottom"><img src="resources/img/logo3.jpg" alt="IK Pakistan Tours Logo" class="logo"></a>
-					<br>			
-				</div>
 				<div class="joyTech">
 					<div class="contactDetails">
 						<ul class="social-links">
@@ -661,48 +665,50 @@
 							<li><a href="tel:+92512226251"><i><ion-icon name="call"></ion-icon><h4>Phone: +92-51-2226251</h4></i></a></li>
 							<li><a href="mailto: Contact@IKPakistanTours.com"><i><ion-icon name="at"></ion-icon><h4>Email: Contact@IKPakistanTours.com</h4></i></a></li>
 							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Locations: Islamabad (HQ)| Kaula Lumpur | New York City</h4></i></a></li>
-							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Address: Al-Rehman Plaza, Main G.T Road Near Ternol Phathak, Islamabad</h4></i></a></li>
+							<li><a href="#"></a><i><ion-icon name="globe"></ion-icon><h4>Address: Office # 3 Lower Ground, Zia Arcade, Spring North,Phase 7 Bahria Town, Pakistan 46000</h4></i></a></li>
 						</div>
 						</ul>
 					</div>
-						<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
+						<p>Pakistan Zindabad <br> Copyright &copy; Free. Acknowledge Credit. <br> Support Open Source<br> <a href="#">Designed & Powered By JoyTech</a></p> 
 				</div>
 		</div>
 	</footer>
     
 
-<!-- jQuery (Bootstrap JS plugins depend on it) -->
-      <!-- JavaScript -->
-      <script src="js/script.js"> </script>
-      <script src="js/script2.js"> </script>
-      <script src="resources/js/script.js"></script>
-      <script src="js/script3.js"> </script>
-      <script>
-      
-// -----top function----/// 
-// get the button 
-var mybutton = document.getElementById("myBtn", "myBtn2" );
-
-//when user scrolls 20px from top, show the button 
-window.onscroll = function () {
-if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
-	mybutton.style.display = "block";
-}
-else {
- mybutton.style.display = "none";
-
- }
-
-}
-</script>
-      <!-- AOS -->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-            AOS.init({
-                duration: 1200,
-                offset: 20,
-            });
-          </script>
+	<!-- script tags -->
+			<!-- //lazy loading -->	
+			<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+			<script> const myLazyLoad = new LazyLoad ({
+			elements_selector: ".photo1" 
+			});
+			</script>
+			<!-- jQuery (Bootstrap JS plugins depend on it) -->
+			<!-- j-query  -->
+			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+			<!-- <script src="resources/js/script2.js"></script> -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<!-- JavaScript -->
+			<!-- <script src="js/script.js"> </script> -->
+			<script src="js/script2.js"> </script>
+			<script src="js/script3.js"> </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- WhatsApp -->
+			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+			<!--   Bootstrap -->
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<script src="vendors/js/jquery.waypoints.min.js"></script>
+			<!-- AOS -->
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+			AOS.init({
+				duration: 1200,
+			});
+			</script>
 
 		</body>	
 

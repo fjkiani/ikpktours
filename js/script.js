@@ -37,9 +37,9 @@ function topFunction () {
 	document.documentElement.scrollTop = 1100;
 }
 
-function topFunction2 () {
-	// document.body.scrollTop = 1500;
-	document.documentElement.scrollTop = 1800;
+function topFunction3 () {
+	document.body.scrollTop = 1500;
+	document.documentElement.scrollTop = 1500;
 }
 
 
