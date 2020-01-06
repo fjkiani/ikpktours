@@ -803,7 +803,7 @@
     letter-spacing: 0px;
     text-transform: capitalize;
     color: #006400;
-    margin-top: 0;
+    margin-top: 150px;
   }
   
   .discoverPakistan {
@@ -1143,13 +1143,6 @@
   .specialHeading h2 {
    background-color:  #ffffcc;;
 
-  }
-
-   /* ----------------------------------------------- */
-  /* Discover Page */ 
-  /* ----------------------------------------------- */
-  .discoverPakistan {
-      margin-top: 50px;
   }
 
 
@@ -1972,7 +1965,10 @@ a:not([href]):not([tabindex]) {
     }
 
 
-
+    /* discover page  */
+    .discoverPakistan h1 {
+        margin-top:50px;
+    }
 
 
 
