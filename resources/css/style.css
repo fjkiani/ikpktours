@@ -1210,11 +1210,11 @@
 }
 a:not([href]):not([tabindex]) {
     color: black;
-    background-color: #006400;
+    background-color: yellow;
 }
 
 .w3-btn-floating {
-    width: 25px;
+    width: 50px;
     height: 29p;
     /* line-height: 19px; */
 }
