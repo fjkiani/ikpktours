@@ -412,7 +412,7 @@
 
   .headingText h2 {
       /* background-color: white; */
-      color: #006400	
+      color: #006400;	
       /* background: rgba(255,255,255,.2); */
       background-color: #0000;
       text-decoration: overline;
@@ -633,7 +633,7 @@
   
   .contactDetails h4 {
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 1px;
     margin-top: 0px;
   }
@@ -1813,8 +1813,8 @@ a:not([href]):not([tabindex]) {
       .contact-form {width: 100%; }
   /*    main page*/
       .jumbotron {
-        height: 80vh;
-        margin-top: 110px;
+        height: 90vh;
+        margin-top: 95px;
     }
       /* .this img {
           background:url('../img/discoverPakSm.jpg')
