@@ -649,10 +649,9 @@
       display: grid;
   }
   
-  .social-links {
-      list-style: none;
-      display: flex;
-      justify-content: center;
+  .something-links {
+    display: flex;
+    justify-content: center;
   
   }
   
